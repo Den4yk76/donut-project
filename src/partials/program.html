@@ -13,11 +13,11 @@
             <li class="program__list-item"> All products are included in the price</li>
         </ul>
 
-        <div class="program__read-more" data-modal>
+        <div class="program__read-more" data-wrap>
             <p class="program__text program--visible">Come with your dear people and friends and you will spend
                 an unforgettable time and will become a real professional
                 in donuts cooking!</p>
-            <button class="program__button program--visible" type="button" data-modal-close>Less</button>
+            <button class="program__button program--visible" type="button" data-button-close>Less</button>
         </div>
         <button class="program__button program__button--open" type="button" data-button-open>Read more</button>
     </div>
@@ -44,8 +44,8 @@
     (() => {
         const refs = {
             openModalBtn: document.querySelector('[data-button-open]'),
-            closeModalBtn: document.querySelector('[data-modal-close]'),
-            modal: document.querySelector('[data-modal]'),
+            closeModalBtn: document.querySelector('[data-button-close]'),
+            modal: document.querySelector('[data-wrap]'),
         };
 
         refs.openModalBtn.addEventListener('click', toggleModal);
