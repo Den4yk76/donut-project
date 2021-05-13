@@ -1,0 +1,153 @@
+.program {
+  @include tablet {
+    display: flex;
+  }
+  @include desktop {
+    display: flex;
+  }
+}
+
+.program__title {
+  font-family: Caveat Brush;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2.71;
+  text-align: center;
+  color: var(--main-text-color);
+
+  @include desktop {
+    font-size: 36px;
+    line-height: 1.81;
+    text-align: start;
+  }
+}
+
+.program__list {
+  margin-top: 10px;
+  margin-bottom: 0;
+
+  @include desktop {
+    margin-top: 21px;
+    margin-bottom: 21px;
+  }
+}
+
+.program__list-item:not(:last-child) {
+  margin-bottom: 10px;
+  @include desktop {
+    margin-bottom: 15px;
+  }
+}
+
+.program__text {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--main-text-color);
+  @include desktop {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
+.program__events {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+  margin-top: -25px;
+
+  @include tablet {
+    margin-left: -15px;
+  }
+  @include desktop {
+    margin-left: -32px;
+    margin-top: -21px;
+  }
+}
+.program__events-item {
+  margin-left: 5px;
+  flex-basis: calc((100% - 2 * 5px) / 2);
+  outline: 1px solid tomato;
+
+  &:nth-child(odd) {
+    margin-top: 25px;
+  }
+  &:nth-child(even) {
+    transform: translateY(33px);
+    margin-top: 30px;
+  }
+
+  @include tablet {
+    margin-left: 15px;
+    flex-basis: calc((100% - 2 * 15px) / 2);
+  }
+  @include desktop {
+    margin-left: 32px;
+    flex-basis: calc((100% - 2 * 32px) / 2);
+
+    &:nth-child(odd) {
+      margin-top: 21px;
+    }
+    &:nth-child(even) {
+      transform: translateY(33px);
+      margin-top: 26px;
+    }
+  }
+}
+
+.program__events-item-type {
+  font-family: Caveat Brush;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.28;
+  text-align: center;
+  color: var(--secondary-text-color);
+  @include desktop {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+.program__events-item-deskription {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  color: var(--secondary-text-color);
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+.program__button {
+  background-color: transparent;
+  border: none;
+
+  font-family: Caveat Brush;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 3.61;
+  text-align: center;
+  color: var(--buttons-bg);
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.program__read-more {
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
+}
+.program__read-more.is-hidden {
+  display: block;
+}
+.program__read-more.is-hidden + .program__button--open {
+  display: none;
+}
