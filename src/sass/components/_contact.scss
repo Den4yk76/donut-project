@@ -62,22 +62,3 @@
     width: 410px;
   }
 }
-
-.button-send {
-  font-family: var(--secondary-font);
-  font-weight: 400;
-
-  width: 145px;
-  height: 40px;
-
-  color: var(--buttons-text-color);
-  background: var(--buttons-bg);
-  border: transparent;
-  border-radius: 25px;
-
-  @include desktop {
-    font-size: 24px;
-    // line-height: 2.7; - это высота строки строки по макету
-    line-height: 1.71; // - это стандартная высота строки ("на глаз")
-  }
-}
