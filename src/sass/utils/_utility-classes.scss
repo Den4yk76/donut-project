@@ -1,0 +1,36 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list-style {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  
+  @include desktop {
+        width: 824px;
+        padding: 0 8px 0 8px;
+    }
+    
+    @include tablet {
+        width: 635px;
+        padding: 0 5px 0 5px;
+    }
+
+    @include mobile {
+        width: 290px;
+        padding: 0 5px 0 5px;
+    }
+}
