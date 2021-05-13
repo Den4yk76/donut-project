@@ -1,0 +1,40 @@
+.button {
+  padding: 0;
+  border: none;
+  color: var(--buttons-text-color);
+  font-family: var(--secondary-font);
+  text-align: center;
+  background-color: var(--buttons-bg);
+}
+.button {
+  @include mini {
+    width: 145px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 18px;
+  }
+}
+.button {
+  @include mobile {
+    width: 145px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 18px;
+  }
+}
+.button {
+  @include tablet {
+    width: 145px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 18px;
+  }
+}
+.button {
+  @include desktop {
+    width: 158px;
+    height: 45px;
+    border-radius: 22.5px;
+    font-size: 24px;
+  }
+}
