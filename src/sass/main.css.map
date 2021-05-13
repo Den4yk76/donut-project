@@ -5,7 +5,8 @@
         "main.scss",
         "_example.scss",
         "base/_fonts.scss",
-        "utils/_veriables.scss"
+        "utils/_veriables.scss",
+        "_mixin.scss"
     ],
     "names": [],
     "file": "main.css"
