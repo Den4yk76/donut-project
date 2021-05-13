@@ -1,0 +1,56 @@
+.footer {
+  .container {
+    outline: 1px solid red;
+    display: block;
+
+    @include mobile {
+      padding: 0 0 19px;
+    }
+
+    @include tablet {
+      padding: 0 1px 21px;
+    }
+
+    @include desktop {
+      padding: 0 1px 21px;
+    }
+  }
+
+  .footer-contact {
+    outline: 1px solid red;
+    margin-top: 34px;
+    display: block;
+
+    &__list {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      justify-content: space-between;
+    }
+
+    &__item {
+      text-decoration: none;
+      list-style: none;
+      font-family: Montserrat;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+      color: var(--contact-text-color);
+    }
+  }
+
+  .footer-social {
+    display: block;
+    margin-top: 34px;
+    text-align: center;
+
+    &__list {
+      display: inline-flex;
+    }
+
+    &__icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
