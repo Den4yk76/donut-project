@@ -12,12 +12,11 @@ body {
   font-family: var(--main-font);
   font-weight: 500;
   color: var(--main-text-color);
-  background-color: var(--main-bg);
-}
+  background-color: white;
 
-body {
-  font-family: Montserrat;
-  color: var(--main-text-color);
+  @include desktop {
+    background-color: var(--main-bg);
+  }
 }
 
 h1,
