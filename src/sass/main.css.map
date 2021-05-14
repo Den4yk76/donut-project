@@ -13,6 +13,7 @@
         "_header.scss",
         "_hero.scss",
         "components/_program.scss",
+        "components/_registration-form.scss"
         "components/_contact.scss",
         "components/_footer.scss"
     ],

@@ -4,7 +4,8 @@
  * Все паршалы подключаются сюда.
  */
 .example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+ 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
   background-color: #fff;
   color: #424242;
@@ -102,8 +103,10 @@ html {
 }
 
 body {
-  font-family: Montserrat;
+  font-family: var(--main-font);
+  font-weight: 500;
   color: var(--main-text-color);
+  background-color: var(--main-bg);
 }
 
 h1,
@@ -214,6 +217,90 @@ button {
     font-size: 18px;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .program {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .program {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.program__title {
+  font-family: Caveat Brush;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2.71;
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+@media screen and (min-width: 1280px) {
+  .program__title {
+    font-size: 36px;
+    line-height: 1.81;
+    text-align: start;
+  }
+}
+
+.program__list {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .program__list {
+    margin-top: 21px;
+    margin-bottom: 21px;
+  }
+}
+
+.program__list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1280px) {
+  .program__list-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.program__text {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--main-text-color);
+}
+
+@media screen and (min-width: 1280px) {
+  .program__text {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
+.program__events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -5px;
+  margin-top: -25px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .program__events {
+    margin-left: -15px;
 
 @media screen and (min-width: 1280px) {
   .button {
@@ -431,7 +518,7 @@ button {
 }
 
 @media screen and (min-width: 1280px) {
-  .program__events {
+    .program__events {
     margin-left: -32px;
     margin-top: -21px;
   }
@@ -692,4 +779,137 @@ button {
   width: 20px;
   height: 20px;
 }
+
+.section-form__title {
+  margin-bottom: 10px;
+  font-family: var(--secondary-font);
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.80;
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+.form {
+  padding-top: 54px;
+  padding-bottom: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-radius: 150px;
+  -webkit-box-shadow: var(--form-shadow);
+          box-shadow: var(--form-shadow);
+  background-color: var(--main-bg);
+}
+
+.info {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 130px;
+}
+
+.place-info {
+  margin-bottom: 30px;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: right;
+  color: var(--main-text-color);
+}
+
+.info-price {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: right;
+  color: var(--main-text-color);
+}
+
+.info::after {
+  content: '';
+  position: absolute;
+  margin: 0 30px;
+  height: 190px;
+  top: -20px;
+  right: -75px;
+  border: 1px solid var(--placeholder-color);
+}
+
+.form-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 250px;
+}
+
+.form-info__title {
+  margin-bottom: 13px;
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+.form-info__input {
+  padding: 0;
+  max-width: 240px;
+  width: 100%;
+  height: 20px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid var(--buttons-bg);
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--secondary-text-color);
+  background-color: var(---main-bg);
+}
+
+.form-info__input:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.form-info__input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--placeholder-color);
+}
+
+.form-info__input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--placeholder-color);
+}
+
+.form-info__input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--placeholder-color);
+}
+
+.form-info__input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--placeholder-color);
+}
+
+.form-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+ 
 /*# sourceMappingURL=main.css.map */

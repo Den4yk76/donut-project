@@ -8,17 +8,21 @@
 }
 
 .program__title {
-  font-family: Caveat Brush;
+  font-family: var(--secondary-font);
   font-weight: 400;
   font-size: 24px;
   line-height: 2.71;
   text-align: center;
   color: var(--main-text-color);
 
+  @include tablet {
+    text-align: start;
+  }
   @include desktop {
     font-size: 36px;
     line-height: 1.81;
     text-align: start;
+    margin-bottom: 10px;
   }
 }
 
@@ -39,21 +43,40 @@
   }
 }
 
+.program__list-item {
+  &::before {
+    display: inline-block;
+    content: '>';
+    height: 100%;
+  }
+}
+
 .program__text {
-  font-family: Montserrat;
+  font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  color: var(--main-text-color);
+  color: inherit;
   @include desktop {
     font-size: 18px;
     line-height: 1.22;
   }
 }
 
+.program__text--margin-top {
+  margin-top: 10px;
+}
+.program_wrap {
+  flex-basis: 50%;
+  @include desktop {
+    margin-right: 40px;
+  }
+}
+
 .program__events {
   display: flex;
   flex-wrap: wrap;
+  flex-basis: 50%;
   margin-left: -5px;
   margin-top: -25px;
 
@@ -68,7 +91,17 @@
 .program__events-item {
   margin-left: 5px;
   flex-basis: calc((100% - 2 * 5px) / 2);
-  outline: 1px solid tomato;
+  // outline: 1px solid tomato;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--secondary-bg);
+  box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+  border-radius: 50%;
+  width: 142px;
+  height: 142px;
 
   &:nth-child(odd) {
     margin-top: 25px;
@@ -85,6 +118,8 @@
   @include desktop {
     margin-left: 32px;
     flex-basis: calc((100% - 2 * 32px) / 2);
+    width: 180px;
+    height: 180px;
 
     &:nth-child(odd) {
       margin-top: 21px;
@@ -94,60 +129,85 @@
       margin-top: 26px;
     }
   }
+
+  // &::before {
+  //   display: block;
+  //   content: '';
+
+  //   // position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 76px;
+  //   height: 84px;
+  //   background-image: url(../images/png/mobile/donat1_mobile.png);
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  // }
 }
 
 .program__events-item-type {
-  font-family: Caveat Brush;
+  font-family: var(--secondary-font);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.28;
   text-align: center;
   color: var(--secondary-text-color);
+
+  margin-top: 50px;
+
   @include desktop {
     font-size: 24px;
     line-height: 1.25;
+    margin-top: 63px;
   }
 }
 .program__events-item-deskription {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
+  font-family: inherit;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.21;
   text-align: center;
   color: var(--secondary-text-color);
 
+  margin-top: 13px;
+  margin-bottom: 13px;
+
   @include desktop {
     font-size: 16px;
     line-height: 1.25;
+    margin-top: 16px;
+    margin-bottom: 17px;
   }
 }
-.program__button {
-  background-color: transparent;
-  border: none;
-
-  font-family: Caveat Brush;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 3.61;
-  text-align: center;
-  color: var(--buttons-bg);
-
+.program__icon-chef {
+  width: 19px;
+  height: 18px;
   @include desktop {
-    display: none;
+    width: 25px;
+    height: 23px;
   }
 }
-
-.program__read-more {
-  display: none;
-
+.program__icon-people {
+  width: 20px;
+  height: 18px;
   @include desktop {
-    display: block;
+    width: 26px;
+    height: 23px;
   }
 }
-.program__read-more.is-hidden {
-  display: block;
+.program__icon-clock {
+  width: 20px;
+  height: 20px;
+  @include desktop {
+    width: 25px;
+    height: 25px;
+  }
 }
-.program__read-more.is-hidden + .program__button--open {
-  display: none;
+.program__icon-chat {
+  width: 25px;
+  height: 17px;
+  @include desktop {
+    width: 31px;
+    height: 21px;
+  }
 }
