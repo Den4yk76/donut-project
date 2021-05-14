@@ -85,7 +85,8 @@
 
 .mobile-menu__item {
   font-weight: 500;
-  font-size: 24px;
+  // font-size: 24px;
+  font-size: calc(24 / 320 * 100vw);
   line-height: 1.208;
   color: var(--main-text-color);
 }

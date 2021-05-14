@@ -1,20 +1,23 @@
 .hero {
   @include mobile {
-    margin-top: 33px;
+    // margin-top: 33px;
+    margin-top: calc(33 / 320 * 100vw);
     text-align: center;
   }
 }
 
 .hero__title {
   @include mobile {
-    width: 224px;
-    height: 76px;
+    // width: 224px;
+    width: calc(224 / 320 * 100vw);
+    // height: 76px;
     font-weight: normal;
-    letter-spacing: 0.02;
+    letter-spacing: 0.02px;
     margin-left: auto;
     margin-right: auto;
     font-family: var(--secondary-font);
-    font-size: 30px;
+    // font-size: 30px;
+    font-size: calc(30 / 320 * 100vw);
     line-height: 1.267;
   }
 }
@@ -23,10 +26,12 @@
   @include mobile {
     font-family: var(--main-font);
     font-weight: 500;
-    font-size: 16px;
+    // font-size: 16px;
+    font-size: calc(16 / 320 * 100vw);
     line-height: 1.25;
     text-align: center;
-    margin-top: 3px;
+    // margin-top: 3px;
+    margin-top: calc(3 / 320 * 100vw);
   }
 }
 .hero__button {
