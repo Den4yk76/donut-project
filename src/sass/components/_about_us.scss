@@ -1,0 +1,25 @@
+.about{
+    display: flex;
+    @include tablet {
+    }
+
+    @include desktop {
+    display: flex;
+    }
+}
+.about-us__title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 1.8;  
+    color: var(--main-text-color);
+    
+}
+.about-us__text{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--main-text-color);
+}
