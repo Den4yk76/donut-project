@@ -2,9 +2,11 @@
   @include mobile {
     position: relative;
     padding-top: 7px;
+    background-color: var(--secondary-bg);
+    z-index: -2;
   }
 }
-.header-background {
+.header__background {
   position: absolute;
   bottom: 0;
   transform: translateY(410px);
@@ -13,7 +15,7 @@
   right: 0;
   height: 460px;
   background-image: url(../images/background/bgtop-mob.png);
-  background-size: 100% auto;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   z-index: -2;
 }
@@ -42,7 +44,7 @@
     height: calc(43 / 320 * 100vw);
     margin-left: auto;
     margin-right: auto;
-    background-image: url(../images/logo.svg);
+    // background-image: url(../images/logo.svg);
     background-repeat: no-repeat;
     background-size: cover;
   }

@@ -5,13 +5,15 @@
         "main.scss",
         "_example.scss",
         "base/_fonts.scss",
-        "utils/_veriables.scss",
+        "utils/_variables.scss",
         "_mixin.scss",
         "base/_base.scss",
         "utils/_utility-classes.scss",
         "base/_button.scss",
         "_header.scss",
         "_hero.scss"
+        "components/_program.scss",
+        "components/_registration-form.scss"
     ],
     "names": [],
     "file": "main.css"

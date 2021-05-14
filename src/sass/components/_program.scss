@@ -40,15 +40,19 @@
 }
 
 .program__text {
-  font-family: Montserrat;
+  font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  color: var(--main-text-color);
+  color: inherit;
   @include desktop {
     font-size: 18px;
     line-height: 1.22;
   }
+}
+
+.program__text--margin-top {
+  margin-top: 10px;
 }
 
 .program__events {
@@ -97,7 +101,7 @@
 }
 
 .program__events-item-type {
-  font-family: Caveat Brush;
+  font-family: var(--secondary-font);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.28;
@@ -121,33 +125,4 @@
     font-size: 16px;
     line-height: 1.25;
   }
-}
-.program__button {
-  background-color: transparent;
-  border: none;
-
-  font-family: Caveat Brush;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 3.61;
-  text-align: center;
-  color: var(--buttons-bg);
-
-  @include desktop {
-    display: none;
-  }
-}
-
-.program__read-more {
-  display: none;
-
-  @include desktop {
-    display: block;
-  }
-}
-.program__read-more.is-hidden {
-  display: block;
-}
-.program__read-more.is-hidden + .program__button--open {
-  display: none;
 }
