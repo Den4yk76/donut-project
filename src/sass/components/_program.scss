@@ -74,24 +74,27 @@
 }
 
 .program__events {
+  // position: relative;
+
   display: flex;
   flex-wrap: wrap;
   flex-basis: 50%;
   margin-left: -5px;
-  margin-top: -25px;
+  // margin-top: -25px;
 
   @include tablet {
     margin-left: -15px;
   }
   @include desktop {
     margin-left: -32px;
-    margin-top: -21px;
+    // margin-top: -21px;
   }
 }
 .program__events-item {
+  position: relative;
+
   margin-left: 5px;
   flex-basis: calc((100% - 2 * 5px) / 2);
-  // outline: 1px solid tomato;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -107,8 +110,7 @@
     margin-top: 25px;
   }
   &:nth-child(even) {
-    transform: translateY(33px);
-    margin-top: 30px;
+    margin-top: 66px;
   }
 
   @include tablet {
@@ -125,24 +127,129 @@
       margin-top: 21px;
     }
     &:nth-child(even) {
-      transform: translateY(33px);
-      margin-top: 26px;
+      margin-top: 59px;
     }
   }
+}
+.program__events-item--img1::before,
+.program__events-item--img2::before,
+.program__events-item--img3::before,
+.program__events-item--img4::before {
+  position: absolute;
+  content: '';
+  display: block;
 
-  // &::before {
-  //   display: block;
-  //   content: '';
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+}
 
-  //   // position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 76px;
-  //   height: 84px;
-  //   background-image: url(../images/png/mobile/donat1_mobile.png);
-  //   background-size: contain;
-  //   background-repeat: no-repeat;
-  // }
+.program__events-item--img1::before {
+  top: -34px;
+  width: 77px;
+  height: 85px;
+  background-image: url(../images/png/mobile/donat1_mobile.png);
+
+  @include tablet {
+    background-image: url(../images/png/tablet/donut1_tablet.png);
+  }
+
+  @include desktop {
+    top: -43px;
+    width: 97px;
+    height: 107px;
+    background-image: url(../images/png/desctop/donut1_desctop.png);
+  }
+}
+.program__events-item--img2::before {
+  top: -26px;
+  width: 65px;
+  height: 72px;
+  background-image: url(../images/png/mobile/donat2_mobile.png);
+
+  @include tablet {
+    background-image: url(../images/png/tablet/donut2_tablet.png);
+  }
+
+  @include desktop {
+    top: -35px;
+    width: 83px;
+    height: 92px;
+    background-image: url(../images/png/desctop/donut2_desctop.png);
+  }
+}
+.program__events-item--img3::before {
+  top: -32px;
+  width: 69px;
+  height: 77px;
+  background-image: url(../images/png/mobile/donat3_mobile.png);
+
+  @include tablet {
+    background-image: url(../images/png/tablet/donut3_tablet.png);
+  }
+
+  @include desktop {
+    top: -40px;
+    width: 88px;
+    height: 97px;
+    background-image: url(../images/png/desctop/donut3_desctop.png);
+  }
+}
+.program__events-item--img4::before {
+  top: -28px;
+  width: 65px;
+  height: 73px;
+  background-image: url(../images/png/mobile/donat4_mobile.png);
+
+  @include tablet {
+    background-image: url(../images/png/tablet/donut4_tablet.png);
+  }
+
+  @include desktop {
+    top: -35px;
+    width: 83px;
+    height: 92px;
+    background-image: url(../images/png/desctop/donut4_desctop.png);
+  }
+}
+
+@include retina2 {
+  .program__events-item--img1::before {
+    background-image: url(../images/png/mobile/donat1_mobile_2x.png);
+    @include tablet {
+      background-image: url(../images/png/tablet/donut1_tablet_2x.png);
+    }
+    @include desktop {
+      background-image: url(../images/png/desctop/donut1_desctop_2x.png);
+    }
+  }
+  .program__events-item--img2::before {
+    background-image: url(../images/png/mobile/donat2_mobile_2x.png);
+    @include tablet {
+      background-image: url(../images/png/tablet/donut2_tablet_2x.png);
+    }
+    @include desktop {
+      background-image: url(../images/png/desctop/donut2_desctop_2x.png);
+    }
+  }
+  .program__events-item--img3::before {
+    background-image: url(../images/png/mobile/donat3_mobile_2x.png);
+    @include tablet {
+      background-image: url(../images/png/tablet/donut3_tablet_2x.png);
+    }
+    @include desktop {
+      background-image: url(../images/png/desctop/donut3_desctop_2x.png);
+    }
+  }
+  .program__events-item--img4::before {
+    background-image: url(../images/png/mobile/donat4_mobile_2x.png);
+    @include tablet {
+      background-image: url(../images/png/tablet/donut4_tablet_2x.png);
+    }
+    @include desktop {
+      background-image: url(../images/png/desctop/donut4_desctop_2x.png);
+    }
+  }
 }
 
 .program__events-item-type {
