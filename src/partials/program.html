@@ -13,14 +13,15 @@
             <li class="program__list-item"> All products are included in the price</li>
         </ul>
 
-        <div class="program__read-more" data-wrap>
-            <p class="program__text program--visible">Come with your dear people and friends and you will spend
+        <div class="read-more" data-wrap>
+            <p class="program__text">Come with your dear people and friends and you will spend
                 an unforgettable time and will become a real professional
                 in donuts cooking!</p>
-            <button class="program__button program--visible" type="button" data-button-close>Less</button>
+            <button class="read-more__button" type="button" data-button-close>Less</button>
         </div>
-        <button class="program__button program__button--open" type="button" data-button-open>Read more</button>
+        <button class="read-more__button read-more__button--open" type="button" data-button-open>Read more</button>
     </div>
+
     <ul class="program__events list-style">
         <li class="program__events-item">
             <p class="program__events-item-type">Type of the event</p>
@@ -40,19 +41,3 @@
         </li>
     </ul>
 </section>
-<script>
-    (() => {
-        const refs = {
-            openModalBtn: document.querySelector('[data-button-open]'),
-            closeModalBtn: document.querySelector('[data-button-close]'),
-            modal: document.querySelector('[data-wrap]'),
-        };
-
-        refs.openModalBtn.addEventListener('click', toggleModal);
-        refs.closeModalBtn.addEventListener('click', toggleModal);
-
-        function toggleModal() {
-            refs.modal.classList.toggle('is-hidden');
-        }
-    })();
-</script>

@@ -1,0 +1,29 @@
+.read-more {
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
+}
+.read-more.is-hidden {
+  display: block;
+}
+.read-more.is-hidden + .read-more__button--open {
+  display: none;
+}
+
+.read-more__button {
+  background-color: transparent;
+  border: none;
+
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 3.61;
+  text-align: center;
+  color: var(--buttons-bg);
+
+  @include desktop {
+    display: none;
+  }
+}

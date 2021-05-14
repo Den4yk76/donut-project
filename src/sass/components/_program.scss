@@ -122,32 +122,3 @@
     line-height: 1.25;
   }
 }
-.program__button {
-  background-color: transparent;
-  border: none;
-
-  font-family: Caveat Brush;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 3.61;
-  text-align: center;
-  color: var(--buttons-bg);
-
-  @include desktop {
-    display: none;
-  }
-}
-
-.program__read-more {
-  display: none;
-
-  @include desktop {
-    display: block;
-  }
-}
-.program__read-more.is-hidden {
-  display: block;
-}
-.program__read-more.is-hidden + .program__button--open {
-  display: none;
-}
