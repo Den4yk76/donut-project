@@ -7,7 +7,7 @@
     }
 }
 .about-us__image{
-    
+
     @include tablet{
         margin-left: 24.35px;
     }
@@ -36,6 +36,7 @@
     line-height: 1.25;
     color: var(--main-text-color);
 
+    margin-bottom: 20px;
     @include desktop {
         font-size: 18px;
         line-height: 1.2;
