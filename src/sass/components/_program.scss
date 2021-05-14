@@ -40,15 +40,19 @@
 }
 
 .program__text {
-  font-family: Montserrat;
+  font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  color: var(--main-text-color);
+  color: inherit;
   @include desktop {
     font-size: 18px;
     line-height: 1.22;
   }
+}
+
+.program__text--margin-top {
+  margin-top: 10px;
 }
 
 .program__events {
@@ -97,7 +101,7 @@
 }
 
 .program__events-item-type {
-  font-family: Caveat Brush;
+  font-family: var(--secondary-font);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.28;
