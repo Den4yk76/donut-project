@@ -5,7 +5,16 @@
     @include desktop {
         flex-direction: row;
     }
-
+}
+.about-us__image{
+    
+    @include tablet{
+        margin-left: 24.35px;
+    }
+    @include desktop{
+        margin-left: 76px;
+    }
+    
 }
 .about-us__title {
     font-family: var(--secondary-font);

@@ -1,6 +1,6 @@
 <section class="about-us container">
     <div class="about-us__image">
-        <img src="/../images/png/desctop/free-cupcake-box_desctop.png" alt="">
+        <img src="../images/png/desctop/free-cupcake-box_desctop.png" alt="">
     </div>
     <div class="about-us__information">
         <h2 class="about-us__title">About us</h2>
@@ -8,26 +8,11 @@
         <p class="about-us__text">Eva has been baking since she was six years old and over the last 49 years, she
             has created hundreds of cakes for weddings and has baked for many celebrities. Eva and our shop have received multiple awards & recognition for excellence.
         </p>
-        <div class="about-us__read-more" data-wrap>
+        <div class="read-more" data-wrap>
             <p class="about-us__text">We are going to teach you how to cook with passion and sparkles in your eyes! We love what we do and believe you will enjoy our cooking atmosphere!</p>
-            <button class="about-as__button about-us--visible" type="button" data-button-close>Less</button>
+            <button class="read-more__button" type="button" data-button-close>Less</button>
         </div>   
-        <button class="about-as__button about-us__button--open" type="button" data-button-open>Read more</button>
+        <button class="read-more__button read-more__button--open" type="button" data-button-open>Read more</button>
     </div>
 </section>
-<script>
-    (() => {
-        const refs = {
-            openModalBtn: document.querySelector('[data-button-open]'),
-            closeModalBtn: document.querySelector('[data-button-close]'),
-            modal: document.querySelector('[data-wrap]'),
-        };
 
-        refs.openModalBtn.addEventListener('click', toggleModal);
-        refs.closeModalBtn.addEventListener('click', toggleModal);
-
-        function toggleModal() {
-            refs.modal.classList.toggle('is-hidden');
-        }
-    })();
-</script>
