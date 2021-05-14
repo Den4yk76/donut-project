@@ -1,0 +1,64 @@
+.header {
+  @include mobile {
+    position: relative;
+    padding-top: 7px;
+    background-color: var(--secondary-bg);
+    z-index: -2;
+  }
+}
+.header__background {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(410px);
+
+  left: 0;
+  right: 0;
+  height: 460px;
+  background-image: url(../images/background/bgtop-mob.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+// .header__logo-box {
+//   @include mobile {
+//     width: 96px;
+//     height: 43px;
+//     background-image: url(../images/logo.svg);
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+// }
+// .header__image-box {
+//   @include mobile {
+//     top: 0;
+//     left: 0;
+//     position: absolute;
+//     width: 117px;
+//     height: 113px;
+//     background-image: url(../images/donuts-mob.png);
+//   }
+// }
+.header__logo-box {
+  @include mobile {
+    width: calc(96 / 320 * 100vw);
+    height: calc(43 / 320 * 100vw);
+    margin-left: auto;
+    margin-right: auto;
+    // background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.header__image-box {
+  @include mobile {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: calc(117 / 320 * 100vw);
+    height: calc(113 / 320 * 100vw);
+    background-image: url(../images/donuts-mob.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+}
