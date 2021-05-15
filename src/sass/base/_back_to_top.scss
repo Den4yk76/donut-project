@@ -1,0 +1,21 @@
+.back_to_top {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 40;
+  display: none;
+}
+.back_to_top-show {
+  display: block;
+}
+.back_to_top__icon {
+  fill: var(--icons-color);
+  background-color: var(--secondary-bg);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 250ms linear;
+
+  &:hover {
+    background-color: var(--buttons-bg);
+  }
+}
