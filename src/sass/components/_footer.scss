@@ -1,25 +1,27 @@
 .footer {
+  position: relative;
   .container {
-    outline: 1px solid red;
+    // outline: 1px solid red;
     display: block;
 
     @include mobile {
-      padding: 0 0 19px;
+      padding: 10px 0 19px;
     }
 
     @include tablet {
-      padding: 0 1px 21px;
+      padding: 20px 1px 21px;
     }
 
     @include desktop {
-      padding: 0 1px 21px;
+      padding: 30px 1px 21px;
     }
   }
 
   .footer-contact {
-    outline: 1px solid red;
+    position: relative;
     margin-top: 34px;
     display: block;
+    z-index: 10;
 
     &__list {
       display: flex;
@@ -31,26 +33,55 @@
     &__item {
       text-decoration: none;
       list-style: none;
-      font-family: Montserrat;
       font-weight: 400;
       font-size: 16px;
       line-height: 1.25;
       color: var(--contact-text-color);
     }
-  }
-
-  .footer-social {
-    display: block;
-    margin-top: 34px;
-    text-align: center;
-
-    &__list {
-      display: inline-flex;
-    }
 
     &__icon {
-      width: 20px;
-      height: 20px;
+      margin-right: 3px;
+    }
+  }
+}
+
+.footer-decor {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 90px;
+  height: 64px;
+  background-image: url('./../images/png/mobile/wheat_flour_mobile.png');
+  background-size: 90px 64px;
+  background-repeat: no-repeat;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('./../images/png/mobile/wheat_flour_mobile_2x.png');
+  }
+
+  @include tablet {
+    width: 145px;
+    height: 144px;
+    background-image: url('./../images/png/tablet/wheat_flour_tablet.png');
+    background-size: 145px 144px;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('./../images/png/tablet/wheat_flour_tablet_2x.png');
+    }
+  }
+
+  @include desktop {
+    width: 318px;
+    height: 184px;
+    background-image: url('./../images/png/desctop/wheat_flour_desctop.png');
+    background-size: 318px 184px;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('./../images/png/desctop/wheat_flour_desctop_2x.png');
     }
   }
 }
