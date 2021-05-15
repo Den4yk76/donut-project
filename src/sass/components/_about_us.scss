@@ -1,18 +1,25 @@
 .about-us {
+    
     display: flex;
     flex-direction: column;
-    
+    @include tablet {
+        flex-direction: row;
+        
+    }
     @include desktop {
         flex-direction: row;
+        
     }
 }
 .about-us__image{
-
+    
     @include tablet{
-        margin-left: 24.35px;
+        margin-right: 24.35px;
     }
     @include desktop{
-        margin-left: 76px;
+        display: inline-block;
+        margin-right: 76px;
+        flex-basis: calc((100% - 30px) / 2);
     }
     
 }
@@ -30,15 +37,51 @@
     }  
     
 }
-.about-us__text {
+.about-us__text{
+    padding-left: 0;
+    margin-bottom: 0;  
+    margin-top: 0;
+}
+.about-us__text-item {
     font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--main-text-color);
+      
+    &:first-child{
+        margin-bottom: 20px;
+    }
+    
+    @include desktop {
+      font-size: 18px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+}
+.about-us__text-item-more {
+    font-family: var(--main-font);
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
     color: var(--main-text-color);
 
-    margin-bottom: 20px;
+    margin-top: 20px;
+    
     @include desktop {
-        font-size: 18px;
-        line-height: 1.2;
+       font-size: 18px;
+       line-height: 1.2;
+       margin-bottom: 20px;
+     }
+}
+.about-us__information {
+    @include tablet{
+        flex-basis: calc((100% - 10px) / 2);
+        margin-left: 30px;
+        
+    }
+    @include desktop {
+        flex-basis: calc((100% - 10px) / 2);
+        padding-top: 30px;
     }
 }
