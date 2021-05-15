@@ -3,8 +3,7 @@
 // }
 
 .contact {
-  margin-top: 27px;
-  margin-bottom: 40px;
+  padding-top: 20px;
 }
 
 .contact-form {
@@ -15,13 +14,14 @@
   font-family: var(--secondary-font);
   font-weight: 400;
   font-size: 24px;
+  margin-bottom: 10px;
   // line-height: 2.71; - это высота строки строки по макету
-  line-height: 1.71; // - это стандартная высота строки ("на глаз")
+  line-height: 1.17; // - это стандартная высота строки ("на глаз")
 
   @include desktop {
     font-size: 36px;
     // line-height: 1.8; - это высота строки строки по макету
-    line-height: 1.71; // - это стандартная высота строки ("на глаз")
+    line-height: 1.17; // - это стандартная высота строки ("на глаз")
   }
 }
 
@@ -30,13 +30,13 @@
   font-weight: 400;
   font-size: 16px;
   // line-height: 4.06; - это высота строки строки по макету
-  line-height: 1.71; // - это стандартная высота строки ("на глаз")
-  margin-bottom: 10px;
+  line-height: 1.17; // - это стандартная высота строки ("на глаз")
+  margin-bottom: 20px;
 
   @include desktop {
     font-size: 18px;
     // line-height: 3.61; - это высота строки строки по макету
-    line-height: 1.71; // - это стандартная высота строки ("на глаз")
+    line-height: 1.17; // - это стандартная высота строки ("на глаз")
   }
 }
 
@@ -62,4 +62,8 @@
   @include tablet {
     width: 410px;
   }
+}
+
+.contact__input--last {
+  margin-bottom: 37px;
 }
