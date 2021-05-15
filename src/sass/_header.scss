@@ -1,11 +1,10 @@
 .header {
-  @include mobile {
-    position: relative;
-    padding-top: 7px;
-    background-color: var(--secondary-bg);
-    z-index: -2;
-  }
+  position: relative;
+  padding-top: 7px;
+  background-color: var(--secondary-bg);
+  z-index: -2;
 }
+
 .header__background {
   position: absolute;
   bottom: 0;
@@ -41,98 +40,25 @@
 //   }
 // }
 .header__logo-box {
-  @include mobile {
-    width: calc(96 / 320 * 100vw);
-    height: calc(43 / 320 * 100vw);
-    margin-left: auto;
-    margin-right: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  width: calc(96 / 320 * 100vw);
+  height: calc(43 / 320 * 100vw);
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .header__image-box {
-  @include mobile {
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: calc(117 / 320 * 100vw);
-    height: calc(113 / 320 * 100vw);
-    background-image: url(../images/png/mobile/header-donuts_mobile_2x.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-  }
-}
-
-.mobile-menu {
-  display: none;
-}
-.mobile-menu.is-open {
-  @include mobile {
-    left: 0;
-    width: 100vw;
-    top: 0;
-    height: 100vh;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 25px;
-    background-color: rgba(254, 243, 228, 0.9);
-    z-index: 1;
-  }
-}
-
-.mobile-menu__item {
-  font-weight: 500;
-  // font-size: 24px;
-  font-size: calc(24 / 320 * 100vw);
-  line-height: 1.208;
-  color: var(--main-text-color);
-}
-.mobile-menu__item:not(:last-child) {
-  margin-bottom: 40px;
-}
-.mobile-menu__button {
-  @include mobile {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 30px;
-    height: 16px;
-    z-index: 3;
-    display: flex;
-    fill: var(--main-text-color);
-    border: none;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    &:focus,
-    &:hover {
-      fill: var(--buttons-bg);
-    }
-    & .mobile-menu__icon-close {
-      display: none;
-    }
-  }
-}
-.mobile-menu__button.is-open {
-  position: fixed;
-
-  & .mobile-menu__icon-close {
-    display: block;
-  }
-  & .mobile-menu__icon-burger {
-    display: none;
-  }
-}
-
-.mobile-menu__logo-box {
-  @include mobile {
-    padding-bottom: 40px;
-    width: calc(190 / 320 * 100vw);
-    height: calc(85 / 320 * 100vw);
-    background-repeat: no-repeat;
-    background-size: cover;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: calc(117 / 320 * 100vw);
+  height: calc(113 / 320 * 100vw);
+  background-image: url(../images/png/mobile/header-donuts_mobile_2x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  @include retina2 {
+    background-image: url(../images/png/mobile/header-donuts_mobile_4x.png);
   }
 }
