@@ -2,6 +2,7 @@
   // margin-top: 33px;
   margin-top: calc(33 / 320 * 100vw);
   text-align: center;
+  position: relative;
 }
 
 .hero__title {
@@ -32,6 +33,11 @@
 .hero__button {
   width: 145px;
   margin-top: 37px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 50px;
+}
+.hero__social-icons {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 15px);
 }
