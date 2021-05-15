@@ -52,7 +52,7 @@
 }
 
 .program__text {
-  font-family: inherit;
+  font-family: var(--main-font);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -68,19 +68,20 @@
 }
 .program_wrap {
   flex-basis: 50%;
+  @include tablet {
+    margin-right: 40px;
+  }
   @include desktop {
     margin-right: 40px;
   }
 }
 
 .program__events {
-  // position: relative;
-
   display: flex;
   flex-wrap: wrap;
   flex-basis: 50%;
   margin-left: -5px;
-  // margin-top: -25px;
+  height: 100%;
 
   @include tablet {
     margin-left: -15px;
