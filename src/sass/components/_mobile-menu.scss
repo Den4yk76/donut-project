@@ -48,12 +48,13 @@
   &:hover {
     fill: var(--buttons-bg);
   }
-  & .mobile-menu__icon-close {
-    display: none;
-  }
 }
 
-.mobile-menu__button.is-open {
+.mobile-menu__icon-close {
+  display: none;
+}
+
+.mobile-menu.is-open + .mobile-menu__button {
   position: fixed;
 
   & .mobile-menu__icon-close {

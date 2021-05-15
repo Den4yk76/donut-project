@@ -4,9 +4,7 @@
   background-color: var(--secondary-bg);
   z-index: -2;
 }
-.header__container.header__container {
-  position: relative;
-}
+
 .header__background {
   position: absolute;
   top: 0%;
@@ -44,6 +42,12 @@
 .header__logo-box {
   background-repeat: no-repeat;
   background-size: cover;
+  @include mini {
+    width: calc(96 / 320 * 100vw);
+    height: calc(43 / 320 * 100vw);
+    margin-left: auto;
+    margin-right: auto;
+  }
   @include mobile {
     width: calc(96 / 320 * 100vw);
     height: calc(43 / 320 * 100vw);
@@ -65,6 +69,16 @@
   background-size: cover;
   position: absolute;
   z-index: -1;
+  @include mini {
+    top: 0;
+    left: 0;
+    width: calc(117 / 320 * 100vw);
+    height: calc(113 / 320 * 100vw);
+    background-image: url(../images/png/mobile/header-donuts_mobile_2x.png);
+    @include retina2 {
+      background-image: url(../images/png/mobile/header-donuts_mobile_4x.png);
+    }
+  }
   @include mobile {
     top: 0;
     left: 0;
