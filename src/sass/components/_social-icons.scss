@@ -1,0 +1,48 @@
+.social-icons {
+  display: block;
+  text-align: center;
+
+  &__list {
+    display: inline-flex;
+    width: 61px;
+    justify-content: space-between;
+
+    @include desktop {
+      width: 77px;
+    }
+  }
+
+  &__icon {
+    &--twitter {
+      width: 18.95px;
+      height: 15px;
+    }
+
+    &--instagram {
+      width: 15px;
+      height: 15px;
+    }
+
+    &--facebook {
+      width: 8.11px;
+      height: 15px;
+    }
+
+    @include desktop {
+      &--twitter {
+        width: 24px;
+        height: 19px;
+      }
+
+      &--instagram {
+        width: 19px;
+        height: 19px;
+      }
+
+      &--facebook {
+        width: 10.27px;
+        height: 19px;
+      }
+    }
+  }
+}

@@ -18,19 +18,19 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  
-  @include desktop {
-        width: 824px;
-        padding: 0 8px 0 8px;
-    }
-    
-    @include tablet {
-        width: 635px;
-        padding: 0 5px 0 5px;
-    }
 
-    @include mobile {
-        width: 290px;
-        padding: 0 5px 0 5px;
-    }
+  @include desktop {
+    width: 824px;
+    padding: 0 8px 0 8px;
+  }
+
+  @include tablet {
+    width: 635px;
+    padding: 0 5px 0 5px;
+  }
+
+  @include mobile {
+    width: 290px;
+    padding: 0 5px 0 5px;
+  }
 }
