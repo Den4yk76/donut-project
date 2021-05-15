@@ -25,4 +25,29 @@
   @include desktop {
     display: none;
   }
+
+  &:hover,
+  &:focus {
+    color: var(--menu-focus);
+  }
+}
+
+.read-more--animation {
+  @include mini {
+    animation: visible 800ms;
+  }
+  @include mobile {
+    animation: visible 800ms;
+  }
+  @include tablet {
+    animation: visible 800ms;
+  }
+}
+@keyframes visible {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
