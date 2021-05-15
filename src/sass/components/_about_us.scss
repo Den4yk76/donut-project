@@ -1,0 +1,44 @@
+.about-us {
+    display: flex;
+    flex-direction: column;
+    
+    @include desktop {
+        flex-direction: row;
+    }
+}
+.about-us__image{
+
+    @include tablet{
+        margin-left: 24.35px;
+    }
+    @include desktop{
+        margin-left: 76px;
+    }
+    
+}
+.about-us__title {
+    font-family: var(--secondary-font);
+    font-size: 24px;
+    line-height: 2.7;
+    text-align: center;
+    color: var(--main-text-color);
+
+    @include desktop {
+        font-size: 36px;
+        line-height: 1.8;
+        text-align: start;
+    }  
+    
+}
+.about-us__text {
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--main-text-color);
+
+    margin-bottom: 20px;
+    @include desktop {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+}

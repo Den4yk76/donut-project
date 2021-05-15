@@ -9,6 +9,8 @@
   @include mobile {
     width: 224px;
     height: 76px;
+    font-weight: normal;
+    letter-spacing: 0.02;
     margin-left: auto;
     margin-right: auto;
     font-family: var(--secondary-font);

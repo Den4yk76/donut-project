@@ -1,58 +1,55 @@
-<section class="program container">
-    <div>
+<section class="program container" id=“program”>
+    <div class="program_wrap">
         <h2 class="program__title">Program</h2>
         <p class="program__text">Indulge in this immersive sweet treat experience with The Chef Donut Queen
             in her New York donut shop!</p>
         <ul class="program__list list-style program__text">
-            <li class="program__list-item">A stand up history of donuts</li>
-            <li class="program__list-item">Make 3 donut flavors of your choice</li>
-            <li class="program__list-item">Enjoy all-you-can-eat donuts</li>
-            <li class="program__list-item">Cocktail pairings and coffee included</li>
-            <li class="program__list-item">Photoshoot by professional photographer</li>
-            <li class="program__list-item">Secret receipt of cooking from Eva</li>
+            <li class="program__list-item"> A stand up history of donuts</li>
+            <li class="program__list-item"> Make 3 donut flavors of your choice</li>
+            <li class="program__list-item"> Enjoy all-you-can-eat donuts</li>
+            <li class="program__list-item"> Cocktail pairings and coffee included</li>
+            <li class="program__list-item"> Photoshoot by professional photographer</li>
+            <li class="program__list-item"> Secret receipt of cooking from Eva</li>
             <li class="program__list-item"> All products are included in the price</li>
         </ul>
 
-        <div class="program__read-more" data-wrap>
-            <p class="program__text program--visible">Come with your dear people and friends and you will spend
+        <div class="read-more" data-wrap>
+            <p class="program__text program__text--margin-top">Come with your dear people and friends and you will spend
                 an unforgettable time and will become a real professional
                 in donuts cooking!</p>
-            <button class="program__button program--visible" type="button" data-button-close>Less</button>
+            <button class="read-more__button" type="button" data-button-close>Less</button>
         </div>
-        <button class="program__button program__button--open" type="button" data-button-open>Read more</button>
+        <button class="read-more__button read-more__button--open" type="button" data-button-open>Read more</button>
     </div>
+
     <ul class="program__events list-style">
-        <li class="program__events-item">
+        <li class="program__events-item program__events-item--img1">
             <p class="program__events-item-type">Type of the event</p>
             <p class="program__events-item-deskription">Cooking classes</p>
+            <svg class="program__icon-chef">
+                <use href="./images/icons.svg#icon-chef-hat"></use>
+            </svg>
         </li>
-        <li class="program__events-item">
+        <li class="program__events-item program__events-item--img2">
             <p class="program__events-item-type">Number of guests</p>
             <p class="program__events-item-deskription">1 to 20</p>
+            <svg class="program__icon-people">
+                <use href="./images/icons.svg#icon-people"></use>
+            </svg>
         </li>
-        <li class="program__events-item">
+        <li class="program__events-item program__events-item--img3">
             <p class="program__events-item-type">Time of the event</p>
             <p class="program__events-item-deskription">18:30 (2.5 hours)</p>
+            <svg class="program__icon-clock">
+                <use href="./images/icons.svg#icon-clock"></use>
+            </svg>
         </li>
-        <li class="program__events-item">
+        <li class="program__events-item program__events-item--img4">
             <p class="program__events-item-type">The host speaks</p>
             <p class="program__events-item-deskription">English, French</p>
+            <svg class="program__icon-chat">
+                <use href="./images/icons.svg#icon-chat"></use>
+            </svg>
         </li>
     </ul>
 </section>
-<script>
-    (() => {
-        const refs = {
-            openModalBtn: document.querySelector('[data-button-open]'),
-            closeModalBtn: document.querySelector('[data-button-close]'),
-            modal: document.querySelector('[data-wrap]'),
-        };
-
-        refs.openModalBtn.addEventListener('click', toggleModal);
-        refs.closeModalBtn.addEventListener('click', toggleModal);
-
-        function toggleModal() {
-            refs.modal.classList.toggle('is-hidden');
-        }
-    })();
-</script>
