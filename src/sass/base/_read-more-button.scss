@@ -34,13 +34,13 @@
 
 .read-more--animation {
   @include mini {
-    animation: visible 800ms;
+    animation: visible 300ms;
   }
   @include mobile {
-    animation: visible 800ms;
+    animation: visible 300ms;
   }
   @include tablet {
-    animation: visible 800ms;
+    animation: visible 300ms;
   }
 }
 @keyframes visible {
