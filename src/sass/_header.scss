@@ -1,7 +1,7 @@
 .header {
   padding-top: 7px;
   @include tablet {
-    // padding-top: 27px;
+    padding-top: 27px;
   }
 }
 .header__container {
@@ -18,37 +18,26 @@
 .header__background {
   position: absolute;
   top: 0%;
-
   left: 0;
   right: 0;
-  // height: 460px;
-  height: calc(235 / 320 * 100vw + 225px);
-  background-image: url(../images/background/bgtop-mob.png);
+
   background-size: 100% 100%;
   background-repeat: no-repeat;
   z-index: -2;
+  @include mini {
+    background-image: url(../images/background/bgtop-mob.png);
+    height: calc(235 / 320 * 100vw + 225px);
+  }
+  @include mobile {
+    background-image: url(../images/background/bgtop-mob.png);
+    height: calc(235 / 320 * 100vw + 225px);
+  }
+  @include tablet {
+    background-image: url(../images/background/bgtop-tablet.png);
+    height: 626px;
+  }
 }
-// .header__logo-box {
-//   @include mobile {
-//     width: 96px;
-//     height: 43px;
-//     margin-left: auto;
-//     margin-right: auto;
-//   }
-// }
-// .header__image-box {
-//   @include mobile {
-//     top: 0;
-//     left: 0;
-//     position: absolute;
-//     width: 117px;
-//     height: 113px;
-//     background-image: url(../images/png/mobile/header-donuts_mobile_2x.png);
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     z-index: -1;
-//   }
-// }
+
 .header__logo-box {
   background-repeat: no-repeat;
   background-size: cover;
@@ -100,10 +89,11 @@
     }
   }
   @include tablet {
-    width: 380px;
+    width: 378px;
     height: 361px;
     top: 0;
-    left: 252px;
+    right: 69px;
+    transform: translateY(-27px);
     background-image: url(../images/png/tablet/header-donuts_tablet.png);
     @include retina2 {
       background-image: url(../images/png/tablet/header-donuts_tablet_2x.png);

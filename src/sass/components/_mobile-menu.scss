@@ -12,7 +12,7 @@
   align-items: center;
   padding-top: 25px;
   background-color: rgba(254, 243, 228, 0.9);
-  z-index: 1;
+  z-index: 100;
 }
 
 .mobile-menu__link {
@@ -26,6 +26,9 @@
   &:hover {
     color: var(--menu-focus);
   }
+  @include tablet {
+    font-size: 24px;
+  }
 }
 .mobile-menu__item:not(:last-child) {
   margin-bottom: 40px;
@@ -37,7 +40,7 @@
   right: 15px;
   width: 30px;
   height: 16px;
-  z-index: 3;
+  z-index: 200;
   display: flex;
   fill: var(--main-text-color);
   border: none;
@@ -47,6 +50,10 @@
   &:focus,
   &:hover {
     fill: var(--buttons-bg);
+  }
+  @include tablet {
+    top: 25px;
+    right: calc((100vw - 768px) / 2 + 67px);
   }
 }
 
@@ -71,4 +78,8 @@
   height: calc(85 / 320 * 100vw);
   background-repeat: no-repeat;
   background-size: cover;
+  @include tablet {
+    width: 190px;
+    height: 85px;
+  }
 }
