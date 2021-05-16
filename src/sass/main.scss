@@ -4,6 +4,8 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+@import './slick.scss';
+@import './slick-theme.scss';
 @import './example';
 @import './base/fonts';
 @import './utils/variables';
@@ -19,7 +21,7 @@
 @import './components/about_us';
 @import './components/program';
 @import './components/registration-form';
-@import './components/rewiew';
+@import './components/reviews';
 @import './components/contact';
 @import './components/social-icons';
 @import './components/footer';
