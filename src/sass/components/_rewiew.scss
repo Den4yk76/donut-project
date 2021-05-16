@@ -1,0 +1,122 @@
+.review-section {
+  outline: 1px solid red;
+  .container {
+    display: block;
+    @include desktop {
+      width: 626px;
+    }
+  }
+
+  &__title {
+    font-family: var(--secondary-font);
+    font-size: 24px;
+    line-height: 2.7;
+    text-align: center;
+    color: var(--contact-text-color);
+  }
+
+  &__client {
+    .review-section__number {
+      margin-top: 30px;
+      font-size: 14px;
+      line-height: 1.2;
+      text-align: center;
+      color: var(--buttons-bg);
+    }
+
+    .review-section__number::before,
+    .review-section__number::after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      box-sizing: border-box;
+      width: 35px;
+      height: 1.5px;
+      background: var(--buttons-bg);
+    }
+
+    .review-section__number::before {
+      margin-right: 12px;
+    }
+
+    .review-section__number::after {
+      margin-left: 12px;
+    }
+  }
+
+  &__text {
+    outline: 1px solid red;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    color: var(--contact-text-color);
+
+    @include desktop {
+      font-size: 18px;
+      line-height: 1.2;
+    }
+  }
+}
+
+.review-list {
+  outline: 1px solid red;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__item {
+    text-align: center;
+
+    &--john,
+    &--elizabeth {
+      @include mobile {
+        display: none;
+      }
+
+      @include mini {
+        display: none;
+      }
+    }
+
+    &--will {
+      @include desktop {
+        width: 234px;
+      }
+    }
+
+    .review-list__info {
+      margin-top: 6px;
+      text-align: center;
+      margin: auto;
+    }
+  }
+
+  .review-list_rate {
+    margin: auto;
+  }
+
+  .review-list__name {
+    display: inline-block;
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 4.6;
+    text-align: center;
+    color: var(--contact-text-color);
+  }
+
+  & &__photo {
+    display: inline-block;
+    text-align: center;
+  }
+
+  img {
+    display: inline-flex;
+    max-width: 100%;
+    height: auto;
+  }
+}
