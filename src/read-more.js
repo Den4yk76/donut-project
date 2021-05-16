@@ -6,6 +6,8 @@
             closeWrapBtn: document.querySelector('[data-wrap-close]'),
             modal: document.querySelector('[data-wrap]'),
             wrap: document.querySelector('[data-wrap1]'),
+            animate: document.querySelector('[data-anime]'),
+            animate1: document.querySelector('[data-anime1]'),
         };
 
         refs.openModalBtn.addEventListener('click', toggleModal);
@@ -16,6 +18,8 @@
         function toggleModal() {
             refs.modal.classList.toggle('is-hidden');
             refs.wrap.classList.toggle('is-hidden');
+            refs.animate.classList.toggle('animate__slideInDown');
+            refs.animate1.classList.toggle('animate__slideInDown');
         }
 })();
     

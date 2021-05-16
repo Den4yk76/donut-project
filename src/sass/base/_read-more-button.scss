@@ -31,23 +31,3 @@
     color: var(--menu-focus);
   }
 }
-
-.read-more--animation {
-  @include mini {
-    animation: visible 300ms;
-  }
-  @include mobile {
-    animation: visible 300ms;
-  }
-  @include tablet {
-    animation: visible 300ms;
-  }
-}
-@keyframes visible {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
