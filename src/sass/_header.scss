@@ -3,14 +3,23 @@
   @include tablet {
     padding-top: 27px;
   }
+  @include desktop {
+    padding-top: 31px;
+  }
 }
 .header__container {
   @include tablet {
     margin-left: auto;
     margin-right: auto;
-    background-color: var(--secondary-bg);
     position: relative;
     width: 632px;
+    z-index: -2;
+  }
+  @include desktop {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 822px;
     z-index: -2;
   }
 }
@@ -20,7 +29,6 @@
   top: 0%;
   left: 0;
   right: 0;
-
   background-size: 100% 100%;
   background-repeat: no-repeat;
   z-index: -2;
@@ -35,6 +43,10 @@
   @include tablet {
     background-image: url(../images/background/bgtop-tablet.png);
     height: 626px;
+  }
+  @include desktop {
+    background-image: url(../images/background/bgtop-desktop.png);
+    height: 1035px;
   }
 }
 
@@ -97,6 +109,17 @@
     background-image: url(../images/png/tablet/header-donuts_tablet.png);
     @include retina2 {
       background-image: url(../images/png/tablet/header-donuts_tablet_2x.png);
+    }
+  }
+  @include desktop {
+    width: 719px;
+    height: 660px;
+    top: 0;
+    right: 0px;
+    transform: translateY(-31px);
+    // background-image: url(../images/png/desctop/header-donuts_desctop.png);
+    @include retina2 {
+      background-image: url(../images/png/desctop/header-donuts_desctop_2x.png);
     }
   }
 }
