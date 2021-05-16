@@ -18,8 +18,8 @@
         function toggleModal() {
             refs.modal.classList.toggle('is-hidden');
             refs.wrap.classList.toggle('is-hidden');
-            refs.animate.classList.toggle('animate__slideInDown');
-            refs.animate1.classList.toggle('animate__slideInDown');
+            refs.animate.classList.toggle('animate__fadeInUp');
+            refs.animate1.classList.toggle('animate__fadeInUp');
         }
 })();
     
