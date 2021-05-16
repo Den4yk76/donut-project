@@ -1,8 +1,18 @@
 .header {
-  position: relative;
   padding-top: 7px;
-  background-color: var(--secondary-bg);
-  z-index: -2;
+  @include tablet {
+    // padding-top: 27px;
+  }
+}
+.header__container {
+  @include tablet {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--secondary-bg);
+    position: relative;
+    width: 632px;
+    z-index: -2;
+  }
 }
 
 .header__background {
@@ -93,7 +103,7 @@
     width: 380px;
     height: 361px;
     top: 0;
-    left: 186px;
+    left: 252px;
     background-image: url(../images/png/tablet/header-donuts_tablet.png);
     @include retina2 {
       background-image: url(../images/png/tablet/header-donuts_tablet_2x.png);
