@@ -1,4 +1,4 @@
-.program {
+.program--container {
   @include tablet {
     display: flex;
   }
@@ -7,6 +7,17 @@
   }
 }
 
+.program--wrap {
+  flex-basis: 50%;
+  @include tablet {
+    margin-right: 40px;
+  }
+  @include desktop {
+    margin-right: 40px;
+  }
+}
+.animate__animated {
+}
 .program__title {
   font-family: var(--secondary-font);
   font-weight: 400;
@@ -65,15 +76,6 @@
 
 .program__text--margin-top {
   margin-top: 10px;
-}
-.program_wrap {
-  flex-basis: 50%;
-  @include tablet {
-    margin-right: 40px;
-  }
-  @include desktop {
-    margin-right: 40px;
-  }
 }
 
 .program__events {
