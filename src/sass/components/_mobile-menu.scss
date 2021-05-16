@@ -13,6 +13,9 @@
   padding-top: 25px;
   background-color: rgba(254, 243, 228, 0.9);
   z-index: 100;
+  @include desktop {
+    display: none;
+  }
 }
 
 .mobile-menu__link {
@@ -55,6 +58,9 @@
     top: 25px;
     right: calc((100vw - 768px) / 2 + 67px);
   }
+  @include desktop {
+    display: none;
+  }
 }
 
 .mobile-menu__icon-close {
@@ -66,6 +72,9 @@
 
   & .mobile-menu__icon-close {
     display: block;
+    @include desktop {
+      display: none;
+    }
   }
   & .mobile-menu__icon-burger {
     display: none;
