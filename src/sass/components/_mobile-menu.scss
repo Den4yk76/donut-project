@@ -40,11 +40,10 @@
 .mobile-menu__button {
   position: absolute;
   top: 15px;
-  right: 15px;
+  left: calc(100vw - 45px);
   width: 30px;
   height: 16px;
-  z-index: 200;
-  display: flex;
+  z-index: 100;
   fill: var(--main-text-color);
   border: none;
   margin: 0;
@@ -56,29 +55,35 @@
   }
   @include tablet {
     top: 25px;
-    right: calc((100vw - 768px) / 2 + 67px);
+    left: calc((100vw - 768px) / 2 + 768px);
   }
   @include desktop {
     display: none;
   }
 }
 
-.mobile-menu__icon-close {
-  display: none;
-}
+// .mobile-menu__icon-close {
+//   display: none;
+// }
 
 .mobile-menu.is-open + .mobile-menu__button {
   position: fixed;
+  top: 23px;
+  left: calc(100vw - 45px);
+  @include tablet {
+    top: 33px;
+    left: calc((100vw - 768px) / 2 + 768px);
+  }
 
-  & .mobile-menu__icon-close {
-    display: block;
-    @include desktop {
-      display: none;
-    }
-  }
-  & .mobile-menu__icon-burger {
-    display: none;
-  }
+  // & .mobile-menu__icon-close {
+  //   display: block;
+  //   @include desktop {
+  //     display: none;
+  //   }
+  // }
+  // & .mobile-menu__icon-burger {
+  //   display: none;
+  // }
 }
 
 .mobile-menu__logo-box {
