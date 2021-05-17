@@ -4,7 +4,7 @@
     padding-top: 27px;
   }
   @include desktop {
-    padding-top: 31px;
+    padding-top: 0;
   }
 }
 .header__container {
@@ -73,10 +73,28 @@
     height: 43px;
   }
   @include desktop {
-    width: 158px;
-    height: 71px;
     display: inline-block;
     margin-right: 38px;
+    padding-top: 31px;
+  }
+}
+.header__logo-container {
+  @include mini {
+    width: calc(96 / 320 * 100vw);
+    height: calc(43 / 320 * 100vw);
+  }
+
+  @include mobile {
+    width: calc(96 / 320 * 100vw);
+    height: calc(43 / 320 * 100vw);
+  }
+  @include tablet {
+    width: 95px;
+    height: 43px;
+  }
+  @include desktop {
+    width: 158px;
+    height: 71px;
   }
 }
 .header-menu__list {
@@ -94,7 +112,7 @@
   margin-right: 20px;
 }
 .header-menu__link {
-  padding-top: 24px;
+  padding-top: 55px;
   padding-bottom: 24px;
 }
 .header__image-box {
@@ -143,6 +161,21 @@
     background-image: url(../images/png/desctop/header-donuts_desctop.png);
     @include retina2 {
       background-image: url(../images/png/desctop/header-donuts_desctop_2x.png);
+    }
+  }
+}
+.header__image-box--spoon {
+  display: none;
+  @include desktop {
+    position: absolute;
+    left: 0;
+    top: 166px;
+    display: block;
+    width: 142px;
+    height: 450px;
+    background-image: url(../images/png/desctop/spoon_desctop.png);
+    @include retina2 {
+      background-image: url(../images/png/desctop/spoon_desctop_2x.png);
     }
   }
 }
