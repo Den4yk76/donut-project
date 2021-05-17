@@ -1,24 +1,70 @@
 .about-us {
+    padding-top: 67px;
+    padding-bottom: 30px;
     
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    //flex-direction: column;
     @include tablet {
-        flex-direction: row;
+        //flex-direction: row;
         
     }
     @include desktop {
         position: relative;
         flex-direction: row;
         
-    }
+    }*/
 }
 .about-us__image{
+    position: absolute;
     
-    @include tablet{
+    width: 290px;
+    height: 309.66px;
+    top: 0;
+    transform: translate(0%, 280px);
+    
+    background-size: cover;
+    background-image: url(../images/png/mobile/free-cupcake-box_mobile.png);
+    @include retina2 {
+        background-image: url(../images/png/mobile/free-cupcake-box_mobile_2x.png);
+    }
+    @include tablet {
+        position: absolute;
+        width: 329.65px;
+        height: 352px;
+        left: 11px;
+        top: 0;
+        transform: translate(-5%, 950px);
+        
+        background-size: cover;
+        background-image: url(../images/png/tablet/free-cupcake-box_tablet.png);
+        @include retina2{
+            background-image: url(../images/png/tablet/free-cupcake-box_tablet_2x.png);
+        }
+    }
+
+    @include desktop{
+        position: absolute;
+        z-index: -3;
+        width: 512px;
+        height: 546.71px;
+        top: 0;
+        transform: translate(-30%, 1300px);
+        
+        background-size: cover;
+        background-image: url(../images/png/desctop/free-cupcake-box_desctop.png);
+        @include retina2 {
+            background-image: url(../images/png/desctop/free-cupcake-box_desctop_2x.png);
+        }
+    }
+
+
+
+
+    /*@include tablet{
         position: absolute;
         bottom: 5px;
         left: 0;
-        transform: translate(20%, 40px);
+        transform: translate(15%, 85px);
         width: 329.65px;
         height: 352px;
         
@@ -28,12 +74,12 @@
         position: absolute;
         bottom: 10px;
         left: 0;
-        transform: translate(-30%, 15px);
+        transform: translate(30%, -10px);
         width: 512px;
         height: 546.71px;
         
         
-    }
+    }*/
     
 }
 .about-us__title {
@@ -89,16 +135,14 @@
      }
 }
 .about-us__information {
+    margin-top: 55%;
     @include tablet{
         flex-basis: calc((100% - 10px) / 2);
-        margin-left: 30px;
-        margin-left: 50%;
+        margin-left: 45%;
         
     }
     @include desktop {
         flex-basis: calc((100% - 10px) / 2);
-        padding-top: 30px;
-        padding-bottom: 25px;
         margin-left: 50%;
     }
 }
