@@ -320,8 +320,3 @@
     height: 21px;
   }
 }
-@include desktop {
-  .animate__animated {
-    --animate-repeat: 0;
-  }
-}
