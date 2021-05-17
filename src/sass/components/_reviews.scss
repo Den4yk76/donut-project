@@ -1,80 +1,84 @@
 .container--compressed {
-    @include tablet {
-        width: 626px;
-        padding: 0 5px 0 5px;
-    }
+  @include tablet {
+    width: 626px;
+    padding: 0 5px 0 5px;
+  }
 
-    @include desktop {
-        width: 626px;
-        padding: 0 5px 0 5px;
-    }
+  @include desktop {
+    width: 626px;
+    padding: 0 5px 0 5px;
+  }
 }
 
 .reviews {
-    padding-top: 40px;
+  padding-top: 40px;
 }
 
 .reviews__head {
-    font-family: var(--secondary-font);
-    font-size: 24px;
-    font-weight: normal;
-    text-align: center;
-    color: var(--main-text-color);
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  color: var(--main-text-color);
 
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
+
+// .rev-slider {
+//   padding-left: 30%;
+//   padding-right: 30%;
+// }
 
 .rev-slider,
 .rev-slider2 {
-    text-align: center;
+  text-align: center;
 }
 
 .slick-slide img {
-    display: block;
-    margin: auto;
-    margin-bottom: 10px;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
 }
 
 .slick-slide .slide__img {
-    margin-top: 19px;
+  margin-top: 19px;
 }
 
 .reviewer__name {
-    font-family: var(--main-font);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.25;
-    color: inherit;
-    margin-bottom: 15px;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.25;
+  color: inherit;
+  margin-bottom: 15px;
 }
 
 .review__text {
-    font-family: var(--main-font);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.25;
-    color: var(--main-text-color);
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.25;
+  color: var(--main-text-color);
 
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .counter {
-    font-family: var(--main-font);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.25;
-    color: var(--buttons-bg);
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.25;
+  color: var(--buttons-bg);
 
-    &::before,
-    &::after {
-        content: '';
-        display: inline-block;
-        vertical-align: middle;
-        box-sizing: border-box;
-        width: 35px;
-        height: 1.5px;
-        background: var(--buttons-bg);
-        margin: 0 15px;
-    }
+  &::before,
+  &::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 35px;
+    height: 1.5px;
+    background: var(--buttons-bg);
+    margin: 0 15px;
+  }
 }
-
