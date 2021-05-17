@@ -16,8 +16,7 @@
     margin-right: 40px;
   }
 }
-.animate__animated {
-}
+
 .program__title {
   font-family: var(--secondary-font);
   font-weight: 400;
@@ -319,10 +318,5 @@
   @include desktop {
     width: 31px;
     height: 21px;
-  }
-}
-@include desktop {
-  .animate__animated {
-    --animate-repeat: 0;
   }
 }

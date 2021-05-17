@@ -3,15 +3,22 @@
   @include tablet {
     padding-top: 27px;
   }
+  @include desktop {
+    padding-top: 31px;
+  }
 }
 .header__container {
   @include tablet {
     margin-left: auto;
     margin-right: auto;
-    background-color: var(--secondary-bg);
     position: relative;
     width: 632px;
-    z-index: -2;
+  }
+  @include desktop {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 822px;
   }
 }
 
@@ -20,7 +27,6 @@
   top: 0%;
   left: 0;
   right: 0;
-
   background-size: 100% 100%;
   background-repeat: no-repeat;
   z-index: -2;
@@ -36,8 +42,17 @@
     background-image: url(../images/background/bgtop-tablet.png);
     height: 626px;
   }
+  @include desktop {
+    background-image: url(../images/background/bgtop-desktop.png);
+    height: 1035px;
+  }
 }
-
+.header-menu {
+  @include desktop {
+    display: flex;
+    align-items: center;
+  }
+}
 .header__logo-box {
   background-repeat: no-repeat;
   background-size: cover;
@@ -60,9 +75,28 @@
   @include desktop {
     width: 158px;
     height: 71px;
+    display: inline-block;
+    margin-right: 38px;
+  }
+}
+.header-menu__list {
+  display: none;
+  @include desktop {
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.222;
+    align-items: center;
   }
 }
 
+.header-menu__item:not(:last-child) {
+  margin-right: 20px;
+}
+.header-menu__link {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .header__image-box {
   background-repeat: no-repeat;
   background-size: cover;
@@ -97,6 +131,18 @@
     background-image: url(../images/png/tablet/header-donuts_tablet.png);
     @include retina2 {
       background-image: url(../images/png/tablet/header-donuts_tablet_2x.png);
+    }
+  }
+  @include desktop {
+    width: 719px;
+    height: 660px;
+    top: 0;
+    right: 0px;
+    transform: translate(calc((100vw - 822px) / 2), -31px);
+
+    background-image: url(../images/png/desctop/header-donuts_desctop.png);
+    @include retina2 {
+      background-image: url(../images/png/desctop/header-donuts_desctop_2x.png);
     }
   }
 }
