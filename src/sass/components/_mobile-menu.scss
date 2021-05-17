@@ -55,7 +55,7 @@
   }
   @include tablet {
     top: 25px;
-    left: calc((100vw - 768px) / 2 + 768px);
+    left: calc((100vw - 632px) / 2 + 632px);
   }
   @include desktop {
     display: none;
