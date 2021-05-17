@@ -274,7 +274,8 @@
 }
 
 .example {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+ 'Open Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.5;
   background-color: #fff;
   color: #424242;
@@ -356,6 +357,9 @@
   --placeholder-color: rgba(171, 129, 108, 0.5);
   --icons-color: #674d40;
   --menu-focus: #876655;
+  --form-valid: rgb(49, 180, 38);
+  --form-invalid: rgba(255, 7, 7, 0.404);
+  --border-form-invalid: rgba(177, 2, 2, 0.705);
   --main-font: 'Montserrat';
   --secondary-font: 'Caveat Brush';
 }
@@ -746,6 +750,7 @@ button {
   .header__container {
     margin-left: auto;
     margin-right: auto;
+    background-color: var(--secondary-bg);
     position: relative;
     width: 632px;
   }
@@ -1226,6 +1231,45 @@ button {
     font-size: 18px;
     line-height: 1.2;
     margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+}
+
+.about-us__text-item-more {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--main-text-color);
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us__text-item-more {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .about-us__information {
+    -ms-flex-preferred-size: calc((100% - 10px) / 2);
+        flex-basis: calc((100% - 10px) / 2);
+    margin-left: 30px;
+    margin-left: 50%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us__information {
+    -ms-flex-preferred-size: calc((100% - 10px) / 2);
+        flex-basis: calc((100% - 10px) / 2);
+    padding-top: 30px;
+    padding-bottom: 25px;
+    margin-left: 50%;
   }
 }
 
@@ -1701,8 +1745,33 @@ button {
 .section-form {
   position: relative;
   background-color: var(--secondary-bg);
-  padding-top: 30px;
-  padding-bottom: 27px;
+}
+
+@media screen and (max-width: 319.98px) {
+  .section-form {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 767.98px) and (min-width: 320px) {
+  .section-form {
+    padding-top: 0;
+    padding-bottom: 27px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .section-form {
+    padding-top: 30px;
+    padding-bottom: 51px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-form {
+    padding-top: 68px;
+    padding-bottom: 77px;
+  }
 }
 
 .section-form__title {
@@ -1823,68 +1892,84 @@ button {
   }
 }
 
-.donut-img::before {
-  position: absolute;
-  content: '';
-  display: block;
+.wrap-img {
+  position: relative;
+}
+
+@media screen and (max-width: 319.98px) {
+  .wrap-img {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767.98px) and (min-width: 320px) {
-  .donut-img::before {
+  .wrap-img {
+    display: none;
+  }
+}
+
+.img-donut {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 196px;
+  height: 200px;
+  background-position: -3% 48%;
+}
+
+@media screen and (max-width: 767.98px) and (min-width: 320px) {
+  .img-donut {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279.98px) {
-  .donut-img::before {
-    top: 76px;
-    right: 568px;
-    width: 200px;
-    height: 196px;
-    background-position: -3% 48%;
-    background-image: url(../images/png/tablet/donut-registration_tablet.png);
-  }
-}
-
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .donut-img::before {
-    position: absolute;
-    content: '';
-    display: block;
-    top: 80px;
-    right: 572px;
-    -webkit-transform: rotate(-8deg);
-            transform: rotate(-8deg);
-    width: 200px;
-    height: 196px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(../images/png/tablet/donut-registration_tablet_2x.png);
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767.98px) and (min-width: 320px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767.98px) and (min-width: 320px), screen and (min-resolution: 192dpi) and (max-width: 767.98px) and (min-width: 320px), screen and (min-resolution: 2dppx) and (max-width: 767.98px) and (min-width: 320px) {
-  .donut-img::before {
-    display: none;
+  .img-donut {
+    top: -292px;
+    right: 483px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .donut-img::before {
-    z-index: 1;
-    position: absolute;
-    top: 76px;
-    right: 1050px;
-    width: 200px;
-    height: 196px;
-    background-position: -3% 48%;
-    background-image: url(../images/png/desctop/donut-registratio_desctop.png);
+  .img-donut {
+    top: -271px;
+    right: 740px;
   }
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .donut-img::before {
-    background-image: url(../images/png/desctop/donut-registration_desctop_2x.png);
+.img-confetti {
+  position: absolute;
+  content: '';
+  display: block;
+}
+
+@media screen and (max-width: 319.98px) {
+  .img-confetti {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767.98px) and (min-width: 320px) {
+  .img-confetti {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .img-confetti {
+    top: -195px;
+    right: -54px;
+    width: 190px;
+    height: 345px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .img-confetti {
+    top: -272px;
+    right: -263px;
+    width: 544px;
+    height: 300px;
   }
 }
 
@@ -2059,7 +2144,7 @@ button {
     margin: 0 30px;
     height: 190px;
     top: -20px;
-    right: -75px;
+    right: -66px;
   }
 }
 
@@ -2211,6 +2296,18 @@ button {
   font-size: 16px;
   line-height: 1.25;
   color: var(--placeholder-color);
+}
+
+.form-info__input:valid {
+  color: var(--buttons-bg);
+  border: 2px solid var(--form-valid);
+  border-radius: 4px;
+}
+
+.form-info__input:invalid:not(:focus):not(:placeholder-shown) {
+  background: var(--form-invalid);
+  border: 2px solid var(--border-form-invalid);
+  border-radius: 4px;
 }
 
 .form-btn {
