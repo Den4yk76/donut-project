@@ -1,5 +1,4 @@
 .hero {
-  // outline: 1px red solid;
   @include mini {
     padding-top: calc(33 / 320 * 100vw);
     padding-bottom: 50px;
@@ -18,7 +17,7 @@
   }
   @include desktop {
     padding-top: 26px;
-    padding-bottom: 56px;
+    padding-bottom: 64px;
   }
 }
 .hero__container {
