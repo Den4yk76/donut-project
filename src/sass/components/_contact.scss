@@ -1,67 +1,60 @@
 // .container-outline {
 //   outline: 1px solid tomato;
 // }
-
 .contact {
-  padding-top: 20px;
+    padding-top: 20px;
 }
 
 .contact-form {
-  text-align: center;
+    text-align: center;
 }
 
 .contact__title {
-  font-family: var(--secondary-font);
-  font-weight: 400;
-  font-size: 24px;
-  margin-bottom: 10px;
-  // line-height: 2.71; - это высота строки строки по макету
-  line-height: 1.17; // - это стандартная высота строки ("на глаз")
-
-  @include desktop {
-    font-size: 36px;
-    // line-height: 1.8; - это высота строки строки по макету
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 10px;
+    // line-height: 2.71; - это высота строки строки по макету
     line-height: 1.17; // - это стандартная высота строки ("на глаз")
-  }
+    @include desktop {
+        font-size: 36px;
+        // line-height: 1.8; - это высота строки строки по макету
+        line-height: 1.17; // - это стандартная высота строки ("на глаз")
+    }
 }
 
 .contact__subtitle {
-  font-family: var(--main-fon);
-  font-weight: 400;
-  font-size: 16px;
-  // line-height: 4.06; - это высота строки строки по макету
-  line-height: 1.17; // - это стандартная высота строки ("на глаз")
-  margin-bottom: 20px;
-
-  @include desktop {
-    font-size: 18px;
-    // line-height: 3.61; - это высота строки строки по макету
+    font-family: var(--main-fon);
+    font-weight: 400;
+    font-size: 16px;
+    // line-height: 4.06; - это высота строки строки по макету
     line-height: 1.17; // - это стандартная высота строки ("на глаз")
-  }
+    margin-bottom: 20px;
+    @include desktop {
+        font-size: 18px;
+        // line-height: 3.61; - это высота строки строки по макету
+        line-height: 1.17; // - это стандартная высота строки ("на глаз")
+    }
 }
 
 .contact__input {
-  display: block;
-  margin: 0 auto 25px auto;
-  width: 265px;
-  height: 22px;
-  background: transparent;
-
-  border: none;
-  border-bottom: 1px solid var(--buttons-bg);
-  color: var(--main-text-color);
-
-  &::placeholder {
-    color: var(--placeholder-color);
-  }
-
-  @include desktop {
-    width: 430px;
-  }
-
-  @include tablet {
-    width: 410px;
-  }
+    display: block;
+    margin: 0 auto 25px auto;
+    width: 265px;
+    height: 22px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--buttons-bg);
+    color: var(--main-text-color);
+    &::placeholder {
+        color: var(--placeholder-color);
+    }
+    @include desktop {
+        width: 430px;
+    }
+    @include tablet {
+        width: 410px;
+    }
 }
 
 .contact__input--last {
@@ -70,4 +63,16 @@
   @include mobile {
     margin-bottom: 37px;
   }
+}
+
+.contact__input--validation:valid {
+    color: var(--buttons-bg);
+    border: 2px solid var(--form-valid);
+    border-radius: 4px;
+}
+
+.contact__input--validation:invalid:not(:focus):not(:placeholder-shown) {
+    background: var(--form-invalid);
+    border: 2px solid var(--border-form-invalid);
+    border-radius: 4px;
 }
