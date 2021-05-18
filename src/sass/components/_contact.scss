@@ -58,7 +58,11 @@
 }
 
 .contact__input--last {
+  margin-bottom: 27px;
+
+  @include mobile {
     margin-bottom: 37px;
+  }
 }
 
 .contact__input--validation:valid {

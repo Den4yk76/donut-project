@@ -63,31 +63,37 @@
       });
     </script> -->
     <script>
-        $(function() {
-            $('.rev-slider').slick({
-                infinite: false,
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                dots: false,
-                arrows: false,
-                asNavFor: '.rev-slider2',
-                responsive: [{
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                    },
-                }, ],
-            });
-            $('.rev-slider2').slick({
-                infinite: false,
+      $(function () {
+        $('.rev-slider').slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+          arrows: false,
+          asNavFor: '.rev-slider2',
+          centerPadding: '33%',
+          centerMode: true,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                dots: false,
-                arrows: false,
-                asNavFor: '.rev-slider',
-            });
+                centerPadding: '0',
+              },
+            },
+          ],
         });
+        $('.rev-slider2').slick({
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+          arrows: false,
+          fade: true,
+          asNavFor: '.rev-slider',
+        });
+      });
     </script>
 </body>
 

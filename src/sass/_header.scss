@@ -76,6 +76,7 @@
     display: inline-block;
     margin-right: 38px;
     padding-top: 31px;
+    padding-bottom: 31px;
   }
 }
 .header__logo-container {
@@ -113,7 +114,7 @@
 }
 .header-menu__link {
   padding-top: 55px;
-  padding-bottom: 24px;
+  padding-bottom: 55px;
 }
 .header__image-box {
   background-repeat: no-repeat;
@@ -167,12 +168,15 @@
 .header__image-box--spoon {
   display: none;
   @include desktop {
+    background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
     left: 0;
     top: 166px;
     display: block;
     width: 142px;
     height: 450px;
+
     background-image: url(../images/png/desctop/spoon_desctop.png);
     @include retina2 {
       background-image: url(../images/png/desctop/spoon_desctop_2x.png);
