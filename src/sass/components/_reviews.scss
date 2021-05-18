@@ -24,6 +24,9 @@
   color: var(--main-text-color);
 
   margin-bottom: 10px;
+  @include desktop {
+    font-size: 36px;
+  }
 }
 
 .rev-slider {
@@ -140,7 +143,7 @@
   // }
 }
 
-.slick-active .img-block, 
+.slick-active .img-block,
 .slick-slide .img-block {
   @include mobile {
     width: 40%;
@@ -161,8 +164,8 @@
     background-image: url(../images/background/bgbott-tablet.png);
   }
   @include desktop {
-    transform: translateY(-26px);
-    height: 1600px;
+    transform: translateY(-28px);
+    height: 1497px;
     background-image: url(../images/background/bgbott-desk.png);
   }
 }
