@@ -42,6 +42,11 @@
     &__icon {
       margin-right: 3px;
     }
+
+    .footer-contact__icon:hover,
+    .footer-contact__icon:focus {
+      fill: var(--buttons-bg);
+    }
   }
 }
 
