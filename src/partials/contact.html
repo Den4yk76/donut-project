@@ -1,18 +1,12 @@
 <section class="contact" id="contact">
-  <div class="contact-form container container-outline">
-    <h2 class="contact__title">Contact us</h2>
-    <h3 class="contact__subtitle">We will answer any question!</h3>
-    <form>
-      <input class="contact__input" placeholder="Email" type="email" name="email" id="email" />
-      <input
-        class="contact__input contact__input--last"
-        placeholder="Type your question"
-        type="text"
-        name="question"
-        id="question"
-      />
-      <button class="button" type="submit">Send</button>
-    </form>
-  </div>
+    <div class="contact-form container container-outline">
+        <h2 class="contact__title">Contact us</h2>
+        <h3 class="contact__subtitle">We will answer any question!</h3>
+        <form>
+            <input class="contact__input contact__input--validation" placeholder="Email" type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Invalid email address" required />
+            <input class="contact__input contact__input--last" placeholder="Type your question" type="text" name="question" id="question" pattern="[A-Za-z]" />
+            <button class="button" type="submit">Send</button>
+        </form>
+    </div>
 </section>
 <!-- comment for check auto build -->

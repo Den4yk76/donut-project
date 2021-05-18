@@ -8,11 +8,11 @@
             </div>
             <div class="form-info">
                 <p class="form-info__title">Apply your personal info for registration </p>
-                <input class="form-info__input" type="text" id="username" name="username" placeholder="Your name" pattern="[A-Za-z]{3,10}" title="latin letters only,minimum 3 and no more than 10 letters, no special characters" required>
+                <input class="form-info__input" type="text" id="username" name="username" placeholder="Your name" pattern="[A-Za-z]{3,10}" title="latin letters only, minimum 3 and no more than 10 letters, no special characters" required>
 
-                <input class="form-info__input" type="tel" id="tel" name="phone" placeholder="Phone number" pattern="[0-9]{4}-[0-9]{3}" title="A valid telephone number must have 4 digits, a hypen (-) and 3 more digits" required>
+                <input class="form-info__input" type="tel" id="tel" name="phone" placeholder="Phone number" pattern="(\+?\d[- .]*){7,13}" title="A valid telephone number must have min 7 and max 13 digits" required>
 
-                <input class="form-info__input" type="email" name="email" id="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="no @ was found in the middle" required>
+                <input class="form-info__input" type="email" name="email" id="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Invalid email address" required>
 
             </div>
             <button class="button form-btn">Register</button>
@@ -20,13 +20,13 @@
         </form>
         <div class="wrap-img">
             <picture class="img-donut">
-                <source srcset="./images/png/desctop/donut-registratio_desctop.png 1x, ./images/png/desctop/donut-registration_desctop_2x.png 2x" media="(min-width:1200px)">
+                <source srcset="./images/png/desctop/donut-registratio_desctop.png 1x, ./images/png/desctop/donut-registration_desctop_2x.png 2x" media="(min-width:1280px)">
                 <source srcset="./images/png/tablet/donut-registration_tablet.png 1x, ./images/png/tablet/donut-registration_tablet_2x.png  2x" media="(min-width:768px)">
                 <img src="./images/png/desctop/donut-registratio_desctop.png" alt="">
             </picture>
 
             <picture class="img-confetti">
-                <source srcset="./images/png/desctop/kisspng-party-confetti_desctop.png 1x, ./images/png/desctop/kisspng-party-confetti_desctop_2x.png 2x" media="(min-width:1200px)">
+                <source srcset="./images/png/desctop/kisspng-party-confetti_desctop.png 1x, ./images/png/desctop/kisspng-party-confetti_desctop_2x.png 2x" media="(min-width:1280px)">
                 <source srcset="./images/png/tablet/kisspng-party-confetti_tablet.png 1x, ./images/png/tablet/kisspng-party-confetti_tablet_2x.png  2x" media="(min-width:768px)">
                 <img src="./images/png/desctop/kisspng-party-confetti_desctop.png" alt="">
             </picture>

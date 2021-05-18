@@ -105,7 +105,7 @@
     content: '';
     display: block;
     width: 196px;
-    height: 200px;
+    height: 200.69px;
     background-position: -3% 48%;
     @include mobile {
         display: none;
@@ -137,9 +137,9 @@
         height: 345px;
     }
     @include desktop {
-        top: -272px;
-        right: -263px;
-        width: 544px;
+        top: -255px;
+        right: -193px;
+        width: 500px;
         height: 300px;
     }
 }
@@ -282,6 +282,7 @@
 }
 
 .form-info__title {
+    font-weight: normal;
     font-size: 18px;
     line-height: 1.22;
     @include mini {

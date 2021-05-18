@@ -1,27 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-      rel="stylesheet"
-    />
+    <title>Donut Masterclass</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="./images/donut-icon-icons.png">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <!-- <include src="./partials/example.html"></include> -->
     <include src="./partials/header.html"></include>
@@ -71,33 +63,32 @@
       });
     </script> -->
     <script>
-      $(function () {
-        $('.rev-slider').slick({
-          infinite: false,
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          dots: false,
-          arrows: false,
-          asNavFor: '.rev-slider2',
-          responsive: [
-            {
-              breakpoint: 768,
-              settings: {
+        $(function() {
+            $('.rev-slider').slick({
+                infinite: false,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: false,
+                arrows: false,
+                asNavFor: '.rev-slider2',
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    },
+                }, ],
+            });
+            $('.rev-slider2').slick({
+                infinite: false,
                 slidesToShow: 1,
                 slidesToScroll: 1,
-              },
-            },
-          ],
+                dots: false,
+                arrows: false,
+                asNavFor: '.rev-slider',
+            });
         });
-        $('.rev-slider2').slick({
-          infinite: false,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: false,
-          arrows: false,
-          asNavFor: '.rev-slider',
-        });
-      });
     </script>
-  </body>
+</body>
+
 </html>
