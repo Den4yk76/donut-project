@@ -54,6 +54,10 @@
   line-height: 1.25;
   color: inherit;
   margin-bottom: 15px;
+
+  @include desktop {
+    font-size: 16px;
+  }
 }
 
 .review__text {
