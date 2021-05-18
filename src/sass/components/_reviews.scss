@@ -12,11 +12,13 @@
 
 .reviews {
   padding-top: 40px;
+  position: relative;
 }
 
 .reviews__head {
   font-family: var(--secondary-font);
   font-size: 24px;
+  line-height: 1.2;
   font-weight: normal;
   text-align: center;
   color: var(--main-text-color);
@@ -143,5 +145,24 @@
   @include mobile {
     width: 40%;
     margin-top: 0;
+  }
+}
+.background-bottom {
+  position: absolute;
+  transform: translateY(-7px);
+  z-index: -1;
+  width: 100vw;
+  height: 1215px;
+  background-image: url(../images/background/bgbott-mob.png);
+  background-size: 100% 100%;
+  @include tablet {
+    transform: translateY(-40px);
+    height: 1260px;
+    background-image: url(../images/background/bgbott-tablet.png);
+  }
+  @include desktop {
+    transform: translateY(-26px);
+    height: 1600px;
+    background-image: url(../images/background/bgbott-desk.png);
   }
 }
