@@ -12,6 +12,13 @@
     }
   }
 
+  &__item {
+    .social-icons__link:hover,
+    .social-icons__link:focus {
+      fill: var(--buttons-bg);
+    }
+  }
+
   &__icon {
     &--twitter {
       width: 18.95px;
