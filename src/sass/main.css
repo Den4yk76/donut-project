@@ -1800,10 +1800,6 @@ button {
   }
 }
 
-.section-form {
-  background-color: var(--secondary-bg);
-}
-
 @media screen and (max-width: 319.98px) {
   .section-form {
     padding-top: 10px;
@@ -1826,7 +1822,7 @@ button {
 
 @media screen and (min-width: 1280px) {
   .section-form {
-    padding-top: 68px;
+    padding-top: 75px;
     padding-bottom: 40px;
   }
 }
@@ -2442,15 +2438,23 @@ button {
 
 .reviews {
   padding-top: 40px;
+  position: relative;
 }
 
 .reviews__head {
   font-family: var(--secondary-font);
   font-size: 24px;
+  line-height: 1.2;
   font-weight: normal;
   text-align: center;
   color: var(--main-text-color);
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews__head {
+    font-size: 36px;
+  }
 }
 
 .rev-slider {
@@ -2500,6 +2504,13 @@ button {
   line-height: 1.25;
   color: var(--main-text-color);
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767.98px) and (min-width: 320px) {
+  .review__text {
+    font-size: 16px;
+    line-height: 1.19;
+  }
 }
 
 .counter {
@@ -2564,9 +2575,39 @@ button {
 }
 
 @media screen and (max-width: 767.98px) and (min-width: 320px) {
-  .slick-active .img-block {
+  .slick-active .img-block,
+  .slick-slide .img-block {
     width: 40%;
     margin-top: 0;
+  }
+}
+
+.background-bottom {
+  position: absolute;
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+  z-index: -1;
+  width: 100vw;
+  height: 1215px;
+  background-image: url(../images/background/bgbott-mob.png);
+  background-size: 100% 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .background-bottom {
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+    height: 1260px;
+    background-image: url(../images/background/bgbott-tablet.png);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .background-bottom {
+    -webkit-transform: translateY(-28px);
+            transform: translateY(-28px);
+    height: 1497px;
+    background-image: url(../images/background/bgbott-desk.png);
   }
 }
 
