@@ -1165,22 +1165,31 @@ button {
   }
 }
 
-.about-us {
-  padding-top: 67px;
-  padding-bottom: 30px;
-  /*display: flex;
-    //flex-direction: column;*/
-}
-
 @media screen and (min-width: 768px) and (max-width: 1279.98px) {
   .about-us {
     padding-top: 0;
-    padding-top: 67px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .about-us {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+}
+
+.about-us .container {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .about-us .container {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us .container {
     position: relative;
   }
 }
@@ -1190,8 +1199,8 @@ button {
   width: 290px;
   height: 309.66px;
   top: 0;
-  -webkit-transform: translate(0%, 320px);
-          transform: translate(0%, 320px);
+  -webkit-transform: translate(0%, -274px);
+          transform: translate(0%, -274px);
   background-size: cover;
   background-image: url(../images/png/mobile/free-cupcake-box_mobile.png);
   /*@include tablet{
@@ -1229,8 +1238,8 @@ button {
     height: 352px;
     left: 11px;
     top: 0;
-    -webkit-transform: translate(-5%, 450px);
-            transform: translate(-5%, 450px);
+    -webkit-transform: translate(-25%, 23px);
+            transform: translate(-25%, 23px);
     background-size: cover;
     background-image: url(../images/png/tablet/free-cupcake-box_tablet.png);
   }
@@ -1249,8 +1258,8 @@ button {
     width: 512px;
     height: 546.71px;
     top: 0;
-    -webkit-transform: translate(-30%, 10px);
-            transform: translate(-30%, 10px);
+    -webkit-transform: translate(-30%, -58px);
+            transform: translate(-30%, -58px);
     background-size: cover;
     background-image: url(../images/png/desctop/free-cupcake-box_desctop.png);
   }
@@ -1263,12 +1272,19 @@ button {
 }
 
 .about-us__title {
+  padding-top: 15px;
   font-family: var(--secondary-font);
   font-weight: 400;
   font-size: 24px;
   line-height: 2.7;
   text-align: center;
   color: var(--main-text-color);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .about-us__title {
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -1323,7 +1339,7 @@ button {
 }
 
 .about-us__information {
-  margin-top: 80%;
+  margin-top: 98%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279.98px) {
@@ -2441,6 +2457,18 @@ button {
   position: relative;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .reviews {
+    padding-top: 8px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews {
+    padding-top: 75px;
+  }
+}
+
 .reviews__head {
   font-family: var(--secondary-font);
   font-size: 24px;
@@ -2562,15 +2590,15 @@ button {
 
 .slick-slide .img-block {
   border-radius: 100%;
-  width: 50%;
+  width: 65%;
   overflow: hidden;
-  margin: 0 auto 5px auto;
+  margin: 0 auto 15px auto;
   -webkit-transition: width 300ms, height 300ms;
   transition: width 300ms, height 300ms;
 }
 
 .slick-active .img-block {
-  width: 90%;
+  width: 100%;
   margin-top: 30px;
 }
 
@@ -2587,7 +2615,8 @@ button {
   -webkit-transform: translateY(-7px);
           transform: translateY(-7px);
   z-index: -1;
-  width: 100vw;
+  left: 0;
+  right: 0;
   height: 1215px;
   background-image: url(../images/background/bgbott-mob.png);
   background-size: 100% 100%;
@@ -2612,7 +2641,13 @@ button {
 }
 
 .contact {
-  padding-top: 20px;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 767.98px) and (min-width: 320px) {
+  .contact {
+    padding-top: 20px;
+  }
 }
 
 .contact-form {
@@ -2623,13 +2658,14 @@ button {
   font-family: var(--secondary-font);
   font-weight: 400;
   font-size: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   line-height: 1.17;
 }
 
 @media screen and (min-width: 1280px) {
   .contact__title {
     font-size: 36px;
+    margin-bottom: 25px;
     line-height: 1.17;
   }
 }
@@ -2731,6 +2767,11 @@ button {
   }
 }
 
+.social-icons__item .social-icons__link:hover,
+.social-icons__item .social-icons__link:focus {
+  fill: var(--buttons-bg);
+}
+
 .social-icons__icon--twitter {
   width: 18.95px;
   height: 15px;
@@ -2816,6 +2857,11 @@ button {
 
 .footer .footer-contact__icon {
   margin-right: 3px;
+}
+
+.footer .footer-contact .footer-contact__icon:hover,
+.footer .footer-contact .footer-contact__icon:focus {
+  fill: var(--buttons-bg);
 }
 
 .footer-decor {
