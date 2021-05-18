@@ -1,3 +1,14 @@
+.program {
+  padding-bottom: 25px;
+  @include tablet {
+    padding-bottom: 0;
+  }
+  @include desktop {
+    padding-top: 8px;
+    padding-bottom: 68px;
+  }
+}
+
 .program--container {
   @include tablet {
     display: flex;
@@ -10,7 +21,7 @@
 .program--wrap {
   flex-basis: 50%;
   @include tablet {
-    margin-right: 40px;
+    margin-right: 38px;
   }
   @include desktop {
     margin-right: 40px;
@@ -25,6 +36,8 @@
   text-align: center;
   color: var(--main-text-color);
 
+  margin-bottom: -8px;
+
   @include tablet {
     text-align: start;
   }
@@ -33,6 +46,7 @@
     line-height: 1.81;
     text-align: start;
     margin-bottom: 10px;
+    margin-top: 5px;
   }
 }
 
@@ -76,6 +90,9 @@
 .program__text--margin-top {
   margin-top: 10px;
 }
+.program--button-margin {
+  margin-top: -6px;
+}
 
 .program__events {
   display: flex;
@@ -89,7 +106,7 @@
   }
   @include desktop {
     margin-left: -32px;
-    // margin-top: -21px;
+    margin-top: 43px;
   }
 }
 .program__events-item {
@@ -109,10 +126,10 @@
   height: 142px;
 
   &:nth-child(odd) {
-    margin-top: 25px;
+    margin-top: 34px;
   }
   &:nth-child(even) {
-    margin-top: 66px;
+    margin-top: 59px;
   }
 
   @include tablet {
@@ -126,10 +143,14 @@
     height: 180px;
 
     &:nth-child(odd) {
-      margin-top: 21px;
+      margin-top: 0;
     }
     &:nth-child(even) {
-      margin-top: 59px;
+      margin-top: 0;
+      transform: translateY(56px);
+    }
+    &:not(:last-child) {
+      margin-bottom: 61px;
     }
   }
 }
