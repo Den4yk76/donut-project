@@ -17,7 +17,7 @@
   @include desktop {
     margin-left: auto;
     margin-right: auto;
-    position: relative;
+    position: static;
     width: 822px;
   }
 }
@@ -157,7 +157,7 @@
     height: 660px;
     top: 0;
     right: 0px;
-    transform: translate(calc((100vw - 822px) / 2), -31px);
+    // transform: translate(calc((100vw - 822px) / 2), -31px);
 
     background-image: url(../images/png/desctop/header-donuts_desctop.png);
     @include retina2 {
