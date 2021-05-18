@@ -13,6 +13,14 @@
 .reviews {
   padding-top: 40px;
   position: relative;
+
+  @include tablet {
+    padding-top: 8px;
+  }
+
+  @include desktop {
+    padding-top: 75px;
+  }
 }
 
 .reviews__head {
@@ -127,14 +135,14 @@
 
 .slick-slide .img-block {
   border-radius: 100%;
-  width: 50%;
+  width: 65%;
   overflow: hidden;
-  margin: 0 auto 5px auto;
+  margin: 0 auto 15px auto;
   transition: width 300ms, height 300ms;
 }
 
 .slick-active .img-block {
-  width: 90%;
+  width: 100%;
   margin-top: 30px;
 
   // @include mobile {
