@@ -39,13 +39,18 @@
       color: var(--contact-text-color);
     }
 
-    &__icon {
-      margin-right: 3px;
+    &__item:hover,
+    &__item:focus {
+      color: var(--buttons-bg);
     }
 
-    .footer-contact__icon:hover,
-    .footer-contact__icon:focus {
+    &__item:hover .footer-contact__icon,
+    &__item:focus .footer-contact__icon {
       fill: var(--buttons-bg);
+    }
+
+    &__icon {
+      margin-right: 3px;
     }
   }
 }
