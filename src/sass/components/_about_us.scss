@@ -1,69 +1,64 @@
 .about-us {
-         
-    @include tablet {
-        padding-top: 0;
-        
-    }
-    @include desktop {
-        //position: relative;
-        padding-top: 50px;
-        padding-bottom: 20px;  
-    }
+  @include tablet {
+    padding-top: 0;
+  }
+  @include desktop {
+    //position: relative;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
 }
-.about-us .container{
+.about-us .container {
+  position: relative;
+  @include tablet {
     position: relative;
-    @include tablet{
-        position: relative;
-    }
-    @include desktop {
-        position: relative;
-    }
+  }
+  @include desktop {
+    position: relative;
+  }
 }
-.about-us__image{
+.about-us__image {
+  position: absolute;
+  width: 290px;
+  height: 309.66px;
+  top: 0;
+  transform: translate(0%, -274px);
+
+  background-size: cover;
+  background-image: url(../images/png/mobile/free-cupcake-box_mobile.png);
+  @include retina2 {
+    background-image: url(../images/png/mobile/free-cupcake-box_mobile_2x.png);
+  }
+  @include tablet {
     position: absolute;
-    width: 290px;
-    height: 309.66px;
+    width: 329.65px;
+    height: 352px;
+    left: 11px;
     top: 0;
-    transform: translate(0%, -274px);
-    
+    transform: translate(-25%, 23px);
+
     background-size: cover;
-    background-image: url(../images/png/mobile/free-cupcake-box_mobile.png);
+    background-image: url(../images/png/tablet/free-cupcake-box_tablet.png);
     @include retina2 {
-        background-image: url(../images/png/mobile/free-cupcake-box_mobile_2x.png);
+      background-image: url(../images/png/tablet/free-cupcake-box_tablet_2x.png);
     }
-    @include tablet {
-        position: absolute;
-        width: 329.65px;
-        height: 352px;
-        left: 11px;
-        top: 0;
-        transform: translate(-25%, 23px);
-        
-        background-size: cover;
-        background-image: url(../images/png/tablet/free-cupcake-box_tablet.png);
-        @include retina2{
-            background-image: url(../images/png/tablet/free-cupcake-box_tablet_2x.png);
-        }
+  }
+
+  @include desktop {
+    position: absolute;
+    z-index: -3;
+    width: 512px;
+    height: 546.71px;
+    top: 0;
+    transform: translate(-30%, -58px);
+    background-size: cover;
+    background-image: url(../images/png/desctop/free-cupcake-box_desctop.png);
+    @include retina2 {
+      background-image: url(../images/png/desctop/free-cupcake-box_desctop_2x.png);
     }
+  }
 
-    @include desktop{
-        position: absolute;
-        z-index: -3;
-        width: 512px;
-        height: 546.71px;
-        top: 0;
-        transform: translate(-30%, -58px);
-        background-size: cover;
-        background-image: url(../images/png/desctop/free-cupcake-box_desctop.png);
-        @include retina2 {
-            background-image: url(../images/png/desctop/free-cupcake-box_desctop_2x.png);
-        }
-    }
-
-
-
-
-    /*@include tablet{
+  /*@include tablet{
         position: absolute;
         bottom: 5px;
         left: 0;
@@ -83,76 +78,74 @@
         
         
     }*/
-    
 }
 .about-us__title {
-    padding-top: 15px;
-    font-family: var(--secondary-font);
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 2.7;
-    text-align: center;
-    color: var(--main-text-color);
+  padding-top: 15px;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2.7;
+  text-align: center;
+  color: var(--main-text-color);
 
-    @include tablet {
-        text-align: start;
-    }
+  @include tablet {
+    text-align: start;
+    padding-top: 0;
+  }
 
-    @include desktop {
-        font-size: 36px;
-        line-height: 1.8;
-        text-align: start;
-    }  
-    
+  @include desktop {
+    font-size: 36px;
+    line-height: 1.8;
+    text-align: start;
+  }
 }
-.about-us__text{
-    padding-left: 0;
-    margin-bottom: 0;  
-    margin-top: 0;
+.about-us__text {
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 .about-us__text-item {
-    font-family: var(--main-font);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    color: var(--main-text-color);
-      
-    &:first-child{
-        margin-bottom: 20px;
-    }
-    
-    @include desktop {
-      font-size: 18px;
-      line-height: 1.2;
-      margin-bottom: 20px;
-    }
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--main-text-color);
+
+  &:first-child {
+    margin-bottom: 20px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
 }
 .about-us__text-item-more {
-    font-family: var(--main-font);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    color: var(--main-text-color);
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--main-text-color);
 
-    margin-top: 20px;
-    
-    @include desktop {
-       font-size: 18px;
-       line-height: 1.2;
-       margin-bottom: 20px;
-     }
+  margin-top: 20px;
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
 }
 .about-us__information {
-    margin-top: 98%;
-    @include tablet{
-        flex-basis: calc((100% - 10px) / 2);
-        margin-left: 45%;
-        margin-top: 0;
-        
-    }
-    @include desktop {
-        flex-basis: calc((100% - 10px) / 2);
-        margin-left: 55%;
-        margin-top: 0;
-    }
+  margin-top: 98%;
+  @include tablet {
+    flex-basis: calc((100% - 10px) / 2);
+    margin-left: 45%;
+    margin-top: 0;
+  }
+  @include desktop {
+    flex-basis: calc((100% - 10px) / 2);
+    margin-left: 55%;
+    margin-top: 0;
+  }
 }
