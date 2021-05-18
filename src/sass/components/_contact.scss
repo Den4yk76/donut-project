@@ -65,5 +65,9 @@
 }
 
 .contact__input--last {
-  margin-bottom: 37px;
+  margin-bottom: 27px;
+
+  @include mobile {
+    margin-bottom: 37px;
+  }
 }
