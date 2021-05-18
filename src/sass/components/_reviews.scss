@@ -162,7 +162,8 @@
   position: absolute;
   transform: translateY(-7px);
   z-index: -1;
-  width: 100vw;
+  left: 0;
+  right: 0;
   height: 1215px;
   background-image: url(../images/background/bgbott-mob.png);
   background-size: 100% 100%;
