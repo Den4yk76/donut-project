@@ -1,21 +1,18 @@
 .read-more {
   display: block;
-  height: 0;
   overflow: hidden;
-  opacity: 0;
-  transition-property: opacity, visibility;
+  height: 0;
+  transition-property: height;
+  transition-duration: 800ms;
   @include desktop {
+    height: var(--height-cont);
     display: block;
-    height: 100%;
+    //height: 100%;
     opacity: 1;
   }
 }
 .read-more.is-hidden {
-  display: block;
-  height: 100%;
-  opacity: 1;
-
-  transition: opacity 400ms linear;
+  height: var(--height-cont);
 }
 .read-more.is-hidden + .read-more__button--open {
   display: none;
