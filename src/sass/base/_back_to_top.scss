@@ -4,6 +4,9 @@
   right: 30px;
   z-index: 40;
   display: none;
+  @media screen and (min-width: 320px) and (max-width: 440px) {
+    bottom: 40px;
+  }
 }
 .back_to_top-show {
   display: block;
