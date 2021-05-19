@@ -1,12 +1,14 @@
 .about-us {
-  --height-cont: 190px;
+  --height-cont: 185px;
   @include tablet {
     padding-top: 0;
+    --height-cont: 165px;
   }
   @include desktop {
     //position: relative;
     padding-top: 50px;
     padding-bottom: 30px;
+    --height-cont: 114px;
   }
 }
 .about-us .container {

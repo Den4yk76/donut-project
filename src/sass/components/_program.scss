@@ -1,7 +1,11 @@
 .program {
-  --height-cont: 190px;
+  --height-cont: 170px;
+  @include tablet {
+    --height-cont: 150px;
+  }
   @include desktop {
     padding-top: 5px;
+    --height-cont: 105px;
   }
 }
 
@@ -145,7 +149,7 @@
       transform: translateY(56px);
     }
     &:not(:last-child) {
-      margin-bottom: 61px;
+      margin-bottom: 56px;
     }
   }
 }
