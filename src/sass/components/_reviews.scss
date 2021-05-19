@@ -43,6 +43,10 @@
   @include mobile {
     min-height: auto;
   }
+
+  @include desktop {
+    min-height: 320px;
+  }
 }
 
 .rev-slider,
@@ -81,10 +85,32 @@
   color: var(--main-text-color);
   margin-bottom: 30px;
 
+  overflow: scroll;
+
   @include mobile {
     font-size: 16px;
     line-height: 1.19;
+    height: 210px;
   }
+
+  @include tablet {
+    height: 132px;
+  }
+
+  @include desktop {
+    height: 134px;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.review__text::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.review__text {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .counter {
@@ -149,10 +175,6 @@
   width: 100%;
   margin-top: 20px;
 
-  // @include mobile {
-  //   width: 40%;
-  //   margin-top: 0;
-  // }
   @include tablet {
     width: 90%;
   }
@@ -181,7 +203,7 @@
   }
   @include desktop {
     transform: translateY(-28px);
-    height: 1475px;
+    height: 1482px;
     background-image: url(../images/background/bgbott-desk.png);
   }
 }
