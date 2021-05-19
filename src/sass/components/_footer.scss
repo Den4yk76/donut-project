@@ -37,6 +37,8 @@
       font-size: 16px;
       line-height: 1.25;
       color: var(--contact-text-color);
+
+      transition: var(--transition-duration) var(--transition-function) color;
     }
 
     &__item:hover,
@@ -50,6 +52,7 @@
     }
 
     &__icon {
+      transition: var(--transition-duration) var(--transition-function) fill;
       margin-right: 3px;
     }
   }
