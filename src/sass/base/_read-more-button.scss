@@ -1,5 +1,4 @@
 .read-more {
-  // display: none;
   display: block;
   height: 0;
   overflow: hidden;
@@ -7,6 +6,8 @@
   transition-property: opacity, visibility;
   @include desktop {
     display: block;
+    height: 100%;
+    opacity: 1;
   }
 }
 .read-more.is-hidden {
