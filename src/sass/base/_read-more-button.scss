@@ -6,6 +6,9 @@
   transition-duration: 800ms;
   @include desktop {
     height: var(--height-cont);
+    display: block;
+    //height: 100%;
+    opacity: 1;
   }
 }
 .read-more.is-hidden {

@@ -47,11 +47,8 @@
 
 .program__list {
   margin-top: 10px;
-  margin-bottom: 0;
-
   @include desktop {
     margin-top: 21px;
-    margin-bottom: 21px;
   }
 }
 
@@ -84,6 +81,9 @@
 
 .program__text--margin-top {
   margin-top: 10px;
+  @include desktop {
+    margin-top: 21px;
+  }
 }
 .program--button-margin {
   margin-top: -6px;

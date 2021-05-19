@@ -6,7 +6,7 @@
   @include desktop {
     //position: relative;
     padding-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
 }
 .about-us .container {
@@ -99,6 +99,7 @@
     line-height: 1.8;
     text-align: start;
     padding-top: 0;
+    margin-bottom: 10px;
   }
 }
 .about-us__text {
@@ -135,7 +136,8 @@
   @include desktop {
     font-size: 18px;
     line-height: 1.2;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 0;
   }
 }
 .about-us__information {
