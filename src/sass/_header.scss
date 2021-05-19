@@ -116,6 +116,11 @@
   display: block;
   padding-top: 55px;
   padding-bottom: 55px;
+  &:focus,
+  &:hover {
+    color: var(--menu-focus);
+  }
+  transition: var(--transition-duration) var(--transition-function) color;
 }
 .header__image-box {
   background-repeat: no-repeat;
