@@ -113,6 +113,7 @@
   margin-right: 20px;
 }
 .header-menu__link {
+  display: block;
   padding-top: 55px;
   padding-bottom: 55px;
 }
@@ -157,8 +158,6 @@
     height: 660px;
     top: 0;
     right: 0px;
-    // transform: translate(calc((100vw - 822px) / 2), -31px);
-
     background-image: url(../images/png/desctop/header-donuts_desctop.png);
     @include retina2 {
       background-image: url(../images/png/desctop/header-donuts_desctop_2x.png);
