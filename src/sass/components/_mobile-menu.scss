@@ -1,13 +1,14 @@
 .mobile-menu {
-  transform: scale(0.01);
+  position: fixed;
+  transform: scale(0) rotate(-360deg);
   transition: transform 300ms;
-}
-.mobile-menu.is-open {
-  transform: scale(1);
   left: 0;
   width: 100vw;
   top: 0;
   height: 100vh;
+}
+.mobile-menu.is-open {
+  transform: scale(1) rotate(0deg);
   position: fixed;
   display: flex;
   flex-direction: column;
