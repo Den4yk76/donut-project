@@ -13,6 +13,10 @@
   }
 
   &__item {
+    .social-icons__link {
+      transition: var(--transition-duration) var(--transition-function) fill;
+    }
+
     .social-icons__link:hover,
     .social-icons__link:focus {
       fill: var(--buttons-bg);
