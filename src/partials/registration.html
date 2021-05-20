@@ -9,9 +9,9 @@
             </div>
             <div class="form-info">
                 <p class="form-info__title">Apply your personal info for registration </p>
-                <input class="form-info__input" type="text" id="username" name="username" placeholder="Your name" pattern="[A-Za-z]{3,10}" title="latin letters only, minimum 3 and no more than 10 letters, no special characters" required>
+                <input class="form-info__input" type="text" id="username" name="username" placeholder="Your name" pattern="[A-Za-z ]{3,40}" title="latin letters only, minimum 3 and no more than 40 letters, no special characters" required>
 
-                <input class="form-info__input" type="tel" id="tel" name="phone" placeholder="Phone number" pattern="(\+?\d[- .]*){7,13}" title="A valid telephone number must have min 7 and max 13 digits" required>
+                <input class="form-info__input" type="tel" id="tel" name="phone" placeholder="+380-(___)-___-__-__" pattern="(\+?\d[- .]*){7,13}" title="A valid telephone number must have min 7 and max 13 digits" required>
 
                 <input class="form-info__input" type="email" name="email" id="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Invalid email address" required>
 
