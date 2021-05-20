@@ -1,37 +1,86 @@
 <section class="section-form" id="registration">
-    <div class="container">
-        <h2 class="section-form__title">Registration</h2>
+  <div class="container">
+    <h2 class="section-form__title">Registration</h2>
 
-        <form class="form">
-            <div class="info">
-                <p class="place-info">May 23, 11:00 New York</p>
-                <p class="info-price">$ 699</p>
-            </div>
-            <div class="form-info">
-                <p class="form-info__title">Apply your personal info for registration </p>
-                <input class="form-info__input" type="text" id="username" name="username" placeholder="Your name" pattern="[A-Za-zA-Яа-яЁё\s]{3,40}" title="minimum 3 and no more than 40 letters, no special characters" required>
+    <form class="form">
+      <div class="info">
+        <p class="place-info">May 23, 11:00 New York</p>
+        <p class="info-price">$ 699</p>
+      </div>
+      <div class="form-info">
+        <p class="form-info__title">Apply your personal info for registration</p>
+        <input
+          class="form-info__input"
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Your name"
+          pattern="[A-Za-zA-Яа-яЁё\s]{3,40}"
+          title="minimum 3 and no more than 40 letters, no special characters"
+          required
+        />
 
-                <input class="form-info__input" type="tel" id="tel" name="phone" placeholder="+380-(___)-___-__-__" pattern="(\+?\d[- .]*){7,13}" title="A valid telephone number must have min 7 and max 13 digits" required>
+        <input
+          class="form-info__input"
+          type="tel"
+          id="tel"
+          name="phone"
+          placeholder="+380-(___)-___-__-__"
+          pattern="(\+?\d[- .]*){7,13}"
+          title="A valid telephone number must have min 7 and max 13 digits"
+          required
+        />
 
-                <input class="form-info__input" type="email" name="email" id="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Invalid email address" required>
+        <input
+          class="form-info__input"
+          type="email"
+          name="email"
+          id="registration-email"
+          placeholder="Email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          title="Invalid email address"
+          required
+        />
+      </div>
+      <button class="button form-btn">Register</button>
+    </form>
 
-            </div>
-            <button class="button form-btn">Register</button>
+    <div class="wrap-img">
+      <picture class="img-donut">
+        <source
+          srcset="
+            ./images/png/desctop/donut-registratio_desctop.png     1x,
+            ./images/png/desctop/donut-registration_desctop_2x.png 2x
+          "
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="
+            ./images/png/tablet/donut-registration_tablet.png    1x,
+            ./images/png/tablet/donut-registration_tablet_2x.png 2x
+          "
+          media="(min-width:768px)"
+        />
+        <img src="./images/png/desctop/donut-registratio_desctop.png" alt="" />
+      </picture>
 
-        </form>
-
-        <div class="wrap-img">
-            <picture class="img-donut">
-                <source srcset="./images/png/desctop/donut-registratio_desctop.png 1x, ./images/png/desctop/donut-registration_desctop_2x.png 2x" media="(min-width:1280px)">
-                <source srcset="./images/png/tablet/donut-registration_tablet.png 1x, ./images/png/tablet/donut-registration_tablet_2x.png  2x" media="(min-width:768px)">
-                <img src="./images/png/desctop/donut-registratio_desctop.png" alt="">
-            </picture>
-
-            <picture class="img-confetti">
-                <source srcset="./images/png/desctop/kisspng-party-confetti_desctop.png 1x, ./images/png/desctop/kisspng-party-confetti_desctop_2x.png 2x" media="(min-width:1280px)">
-                <source srcset="./images/png/tablet/kisspng-party-confetti_tablet.png 1x, ./images/png/tablet/kisspng-party-confetti_tablet_2x.png  2x" media="(min-width:768px)">
-                <img src="./images/png/desctop/kisspng-party-confetti_desctop.png" alt="">
-            </picture>
-        </div>
+      <picture class="img-confetti">
+        <source
+          srcset="
+            ./images/png/desctop/kisspng-party-confetti_desctop.png    1x,
+            ./images/png/desctop/kisspng-party-confetti_desctop_2x.png 2x
+          "
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="
+            ./images/png/tablet/kisspng-party-confetti_tablet.png    1x,
+            ./images/png/tablet/kisspng-party-confetti_tablet_2x.png 2x
+          "
+          media="(min-width:768px)"
+        />
+        <img src="./images/png/desctop/kisspng-party-confetti_desctop.png" alt="" />
+      </picture>
     </div>
+  </div>
 </section>
